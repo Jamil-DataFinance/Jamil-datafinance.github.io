@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Financial Statements in Power BI | Jamil Ur Rehman</title>
+  <meta name="description" content="Income statement, balance sheet and cash flow statement built in Power BI from an SQL accounting database, with built-in accuracy checks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+</header>
+
+<section class="p-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html#projects">← All projects</a></div>
+    <div class="eyebrow">Financial reporting · Power BI + SQL</div>
+    <h1>Financial Statements in Power BI</h1>
+    <p class="lead">A complete set of financial statements (income statement, balance sheet and cash flow) built
+      directly from the accounting database. The numbers refresh automatically, and the report checks itself
+      to confirm the statements balance.</p>
+    <div class="glance">
+      <div><small>Statements</small><b>P&amp;L, Balance Sheet, Cash Flow</b></div>
+      <div><small>Period</small><b>2019–2021, yearly or monthly</b></div>
+      <div><small>Controls</small><b>Built-in accuracy checks</b></div>
+      <div><small>Built with</small><b>Power BI, SQL, DAX</b></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <div class="eyebrow">The problem</div>
+      <h2>Month-end statements shouldn't be rebuilt by hand</h2>
+      <p>Many finance teams export the trial balance to Excel every month, rebuild the statements, and check
+        by eye that the balance sheet balances. It's slow, and every manual step is a chance for an error.</p>
+    </div>
+    <div>
+      <div class="eyebrow">What I built</div>
+      <h2>Live statements with their own controls</h2>
+      <ul class="ticks">
+        <li>Connected Power BI straight to the <b>SQL accounting database</b>, so the reports update on refresh.</li>
+        <li>Built a properly laid-out <b>income statement</b> with subtotals (gross profit, EBIT, net income) and margin %.</li>
+        <li>Built the <b>balance sheet</b> and an indirect-method <b>cash flow statement</b> that reconciles to closing cash.</li>
+        <li>Added <b>model checks</b> confirming profit is correct, the balance sheet balances, and cash ties out.</li>
+        <li>The same report switches between <b>yearly and monthly</b> views.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">The report</div>
+    <h2>What it looks like</h2>
+    <p class="hint">Click any image to view it full size.</p>
+
+    <div class="shots">
+      <div class="shot">
+        <h3>Home page &amp; model checks</h3>
+        <figcaption>Navigation to each statement, and a check panel that confirms the profit is correct, the balance
+          sheet balances, and cash is accurate. If any check fails, the reader knows not to trust the numbers.</figcaption>
+        <figure><img src="../assets/img/financial-reporting/navigation.png" alt="Report navigation page with model checks"></figure>
+      </div>
+
+      <div class="shot">
+        <h3>Income statement</h3>
+        <figcaption>Three years side by side, with gross profit, EBIT and net income margins. Revenue and gross margin are
+          tracked by quarter, and a waterfall chart shows how revenue becomes profit.</figcaption>
+        <figure><img src="../assets/img/financial-reporting/income-statement.png" alt="Income statement report"></figure>
+      </div>
+
+      <div class="shot">
+        <h3>Balance sheet</h3>
+        <figcaption>Assets, liabilities and equity for each year, with the current ratio and debt ratio tracked over time,
+          and current assets compared with current liabilities each quarter.</figcaption>
+        <figure><img src="../assets/img/financial-reporting/balance-sheet.png" alt="Balance sheet report"></figure>
+      </div>
+
+      <div class="shot">
+        <h3>Cash flow statement</h3>
+        <figcaption>Operating, investing and financing cash flows, reconciled from opening to closing cash, with
+          cash flow margin, capex ratio and a quarterly view of the cash balance.</figcaption>
+        <figure><img src="../assets/img/financial-reporting/cash-flow.png" alt="Cash flow statement report"></figure>
+      </div>
+
+      <div class="shot">
+        <h3>Monthly view</h3>
+        <figcaption>The same income statement switched to months, with buttons to pick the year and quarter.
+          This is useful for monthly management accounts.</figcaption>
+        <figure><img src="../assets/img/financial-reporting/monthly-pl.png" alt="Monthly detailed income statement"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Why it matters</div>
+    <h2>What this shows</h2>
+    <ul class="ticks">
+      <li>A solid grasp of how the three statements link together, including the indirect cash flow method.</li>
+      <li>Controls thinking: the report proves its own accuracy instead of relying on manual review.</li>
+      <li>The technical ability to connect finance reporting straight to the source system with SQL.</li>
+    </ul>
+    <div class="callout"><p>Built on a Corporate Finance Institute (CFI) practice dataset. All figures are illustrative.</p></div>
+    <p style="margin-top:24px" class="hint">For technical readers: <a href="https://github.com/Jamil-DataFinance/Financial_Reporting_in_PowerBI" target="_blank" rel="noopener">the SQL and DAX walkthrough is on GitHub</a>.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap next">
+    <a href="fpa-dashboard.html"><small>← Previous project</small><b>FP&amp;A Decision Support Dashboard</b></a>
+    <a href="five-year-model.html" style="text-align:right"><small>Next project →</small><b>Five-Year Financial Model</b></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
+    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js?v=3"></script>
+</body>
+</html>

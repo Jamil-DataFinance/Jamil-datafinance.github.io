@@ -1,596 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamil ur Rehman Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        .nav-link {
-            cursor: pointer;
-            margin-right: 20px;
-            border-bottom: 2px solid transparent;
-        }
-
-        .nav-link:hover {
-            border-bottom: 2px solid #000;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .contact-info {
-            margin-top: 1rem;
-            text-align: center;
-            font-size: 0.875rem; /* Adjust font size */
-        }
-
-
-
-        h2 {
-            border-bottom: 2px solid #FFFFFF; /* Light gray */
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem; /* Added margin-bottom to create space */
-        }
-
-        .section-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap; /* Added to allow wrapping of items */
-        }
-
-        .intro-text {
-            width: 60%; /* Adjust width as needed */
-            text-align: justify;
-            font-size: 0.875rem; /* Adjust font size */
-        }
-
-        .skill-group {
-            width: 35%; /* Adjust width as needed */
-            background-color: #FFFFFF; /* Light gray background for skills section */
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-        }
-
-        .skill-group h3 {
-            text-align: center;
-            font-size: 1.5rem; /* Adjust font size */
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        .skills-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .skill-icon {
-            cursor: pointer;
-            transition: transform 0.2s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            background-color: #FFFFFF; /* Tailwind gray-200 */
-            width: calc(100% / 4 - 1rem); /* Adjusted to show 4 skills per row */
-            margin-bottom: 1rem; /* Adjust margin between skills */
-        }
-
-        .skill-icon:hover {
-            transform: scale(1.1);
-        }
-
-        .skill-icon i {
-            font-size: 2rem; /* Adjust icon size */
-            margin-bottom: 0.5rem;
-        }
-
-        .skill-label {
-            text-align: center;
-            font-size: 0.875rem; /* Adjust font size */
-            font-weight: bold;
-            margin-top: 0.5rem;
-        }
-
-        .designation {
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            margin-top: 1.5rem; /* Adjusted margin-top */
-            margin-bottom: 1.5rem; /* Added margin-bottom */
-            font-size: 1.25rem; /* Adjust font size */
-            color: #000; /* Black color */
-        }
-
-        .designation i {
-            margin-right: 0.5rem;
-            font-size: 1.5rem; /* Adjust icon size */
-            color: #6B7280; /* Adjust icon color */
-        }
-
-        .contact-icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1rem;
-        }
-
-        .contact-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 0.75rem;
-            color: #4A90E2; /* Icon color */
-            font-size: 1.5rem; /* Icon size */
-            transition: color 0.3s;
-        }
-
-        .contact-icons a:hover {
-            color: #3B82F6; /* Hover color */
-        }
-
-        .text-custom-font-size {
-            font-size: 3rem; /* Sets the font size to 48px */
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jamil Ur Rehman | FP&amp;A &amp; Finance Analytics</title>
+  <meta name="description" content="Portfolio of Jamil Ur Rehman, ACCA, FMVA. FP&A, financial modelling, group consolidation and Power BI reporting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
+<body>
 
-<body class="bg-white-100 text-gray-900 flex flex-col min-h-screen">
-    <header class="bg-blue-900 text-white shadow">
-        <div class="container mx-auto px-4 py-6">
-            <div class="flex justify-between items-center">
-                <h1 class="text-3xl font-bold">Jamil ur Rehman Portfolio</h1>
-                <nav class="space-x-4">
-                    <span class="nav-link text-lg text-white hover:text-gray-300" data-section="home">Home</span>
-                    <span class="nav-link text-lg text-white hover:text-gray-300" data-section="Learning & Certifications">Learning & Certifications</span>
-                    <span class="nav-link text-lg text-white hover:text-gray-300" data-section="Experience">Experience</span>
-                    <span class="nav-link text-lg text-white hover:text-gray-300" data-section="projects">Projects</span>
-                    
-                </nav>
-            </div>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Jamil Ur Rehman<span>.</span></a>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a class="btn small" href="assets/files/Jamil-Ur-Rehman-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="avatar"><img src="assets/img/jamil.png" alt="Jamil Ur Rehman"></div>
+      <div>
+        <div class="role">Senior Financial Analyst · Dubai, UAE</div>
+        <h1 class="headline">ACCA Qualified FP&amp;A &amp; Business Intelligence Professional
+          <span>Expert in Financial Modeling &amp; Power BI and AI Automations</span></h1>
+        <p class="lead">I'm Jamil, an ACCA-qualified FP&amp;A and finance analytics professional with 8+ years of experience
+          across audit, accounting, financial planning, and business intelligence.</p>
+        <p class="lead">Currently supporting a reputable sports and education group across 7+ entities, I focus on:</p>
+        <ul class="ticks lead-list">
+          <li>Building robust financial models and Power BI dashboards</li>
+          <li>Developing AI-powered automation to streamline reporting</li>
+          <li>Driving performance analysis to improve visibility and support strategic decisions</li>
+        </ul>
+        <div class="badges">
+          <span class="badge">ACCA</span><span class="badge">FMVA</span><span class="badge">BIDA®</span><span class="badge">FPWM™</span><span class="badge">MSc Economics</span>
         </div>
-    </header>
-    
-    <main class="container mx-auto px-4 py-8 flex-grow relative">
-        <!-- Home Section -->
-        <section id="home" class="section">
-            <div class="section-content">
-                <div class="intro-text">
-                    <h2 class="text-2xl font-semibold mb-4">Welcome to my professional journey</h2>
-                    <p class="text-lg">I'm  <span class="text-custom-font-size font-bold text-blue-900">Jamil ur Rehman</span></p>
-                    <div class="designation">
-                        <span class="mr-2"><i class="fas fa-chart-line fa-lg text-blue-500"></i></span> Business Intelligence & Data Analyst
-                    </div>
-                    <div class="designation">
-                        <span class="mr-2"><i class="fas fa-file-invoice fa-lg text-green-500"></i></span> Accounting and Finance Specialist 
-                    </div>
-                    <p class="text-lg leading-relaxed mt-8">
-                        With over 6 years of experience in accounting, finance, and financial audits, I excel in managing complex financial operations with precision and accuracy. My expertise ensures timely and accurate financial reports that drive strategic decision-making and uphold regulatory standards.
-                    </p>
-                    <p class="text-lg leading-relaxed mt-4">
-                        Certified Business Intelligence and Data Analyst proficient in Excel, Power Query, and Power BI. Eager to leverage SQL and Python expertise to further enhance data analysis capabilities and drive actionable insights.
-                    </p>
-                    <p class="text-lg leading-relaxed mt-4">
-                        Leveraging my automation expertise, I have successfully streamlined the generation of financial and operational reports in previous roles. My ability to craft compelling data visualizations ensures that insights are readily accessible to stakeholders.
-                    </p>
-
-                
-                </div>
-                <!-- Skills Section -->
-                <div class="skill-group mt-8">
-                    <h3 class="text-xl font-semibold mb-4 text-center">Explore My Skill Set </h3>
-                    <div class="skills-container">
-                        <div class="skill-icon" title="Financial Reporting">
-                            <i class="fas fa-file-invoice fa-3x text-green-500"></i>
-                            <span class="skill-label">Financial Reporting</span>
-                        </div>
-                        <div class="skill-icon" title="FP&A">
-                            <i class="fas fa-chart-line fa-3x text-blue-500"></i>
-                            <span class="skill-label">FP&A</span>
-                        </div>
-                        <div class="skill-icon" title="Financial Statements">
-                            <i class="fas fa-file-alt fa-3x text-yellow-500"></i>
-                            <span class="skill-label">Financial Statements</span>
-                        </div>
-                        <div class="skill-icon" title="Business Valuations">
-                            <i class="fas fa-coins fa-3x text-teal-500"></i>
-                            <span class="skill-label">Business Valuations </span>
-                        </div>
-                        <div class="skill-icon" title="Financial Modelling">
-                            <i class="fas fa-chart-line fa-3x text-green-500"></i>
-                            <span class="skill-label">Financial Modelling</span>
-                        </div>
-                        <div class="skill-icon" title="Budgeting & Forecasting">
-                            <i class="fas fa-calculator fa-3x text-blue-500"></i>
-
-                            <span class="skill-label">Budgeting & Forecasting</span>
-                        </div>
-                        <div class="skill-icon" title="Excel">
-                            <i class="fas fa-file-excel fa-3x text-yellow-500"></i>
-                            <span class="skill-label">Excel</span>
-                        </div>
-                        <div class="skill-icon" title="Power Query">
-                            <i class="fas fa-file-excel fa-3x text-teal-500"></i>
-                            <span class="skill-label">Power Query</span>
-                        </div>
-                        <div class="skill-icon" title="Power BI">
-                            <i class="fas fa-database fa-3x text-teal-500"></i>
-                            <span class="skill-label">Power BI</span>
-                        </div>
-                        <div class="skill-icon" title="Data Analysis">
-                            <i class="fas fa-chart-bar fa-3x text-green-500"></i>
-                            <span class="skill-label">Data Analysis</span>
-                        </div>
-                        <div class="skill-icon" title="Data Visualization">
-                            <i class="fas fa-chart-pie fa-3x text-yellow-500"></i>
-                            <span class="skill-label">Data Visualization</span>
-                        </div>
-                        <div class="skill-icon" title="Automation">
-                            <i class="fas fa-robot fa-3x text-teal-500"></i>
-                            <span class="skill-label">Automation</span>
-                        </div>
-                        <div class="skill-icon" title="SQL">
-                            <i class="fas fa-database fa-3x text-green-500"></i>
-                            <span class="skill-label">SQL</span>
-                        </div>
-                        <div class="skill-icon" title="Python">
-                            <i class="fab fa-python fa-3x text-blue-500"></i>
-                            <span class="skill-label">Python</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education and Certification Section -->
-        <section id="Learning & Certifications" class="section hidden">
-            <div class="section-content">
-                <h2 class="text-2xl font-semibold mb-4">Learning & Certifications</h2>
-                <div class="designation w-full">
-                    <span class="mr-2"><i class="fas fa-graduation-cap fa-lg text-blue-500"></i></span>
-                    <div>
-                        <span class="font-bold">Master of Science – Economics</span><br>
-                        <span>University of Science and Technology, Bannu, Pakistan</span><br>
-                        <span class="text-sm">Graduation Year: 2022</span>
-                    </div>
-                </div>
-                <div class="designation w-full mt-4">
-                    <span class="mr-2"><i class="fas fa-certificate fa-lg text-green-500"></i></span>
-                    <div>
-                        <span class="font-bold">ACCA Certification</span><br>
-                        <span>Association of Chartered Certified Accountants, UK</span><br>
-                        <span class="text-sm">Membership Year: 2022</span>
-                    </div>
-                </div>
-                <div class="designation w-full mt-4">
-                    <span class="mr-2"><i class="fas fa-user-graduate fa-lg text-purple-500"></i></span>
-                    <div>
-                        <span class="font-bold">Business Intelligence and Data Analyst (BIDA)</span><br>
-                        <span>Corporate Finance Institute (CFI)</span><br>
-                        <span class="text-sm">Membership Year: 2024</span>
-                    </div>
-                </div>
-                <div class="designation w-full mt-4">
-                    <span class="mr-2"><i class="fas fa-chart-line fa-lg text-yellow-500"></i></span>
-                    <div>
-                        <span class="font-bold">Financial Modelling and Valuation Analyst (FMVA)</span><br>
-                        <span>Corporate Finance Institute (CFI)</span><br>
-                        <span class="text-sm">Membership Year: 2024</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="Experience" class="section hidden">
-            <div class="section-content">
-                <h2 class="text-2xl font-semibold mb-4">Experience</h2>
-        
-                <!-- Hamilton Aquatics, Dubai -->
-                <div class="designation w-full mt-4">
-                    <span class="mr-2"><i class="fas fa-swimmer fa-lg text-blue-500"></i></span>
-                    <div>
-                        <span class="font-bold text-lg"> Hamilton Aquatics, Dubai </span><br>
-                        <span>General Accountant</span><br>
-                        <span>Nov 2022 - Present</span><br>
-                        <ul class="list-disc list-inside mt-2 text-base">
-                            <li>Managed end-to-end accounting processes for multiple group entities, ensuring accuracy and compliance.</li>
-                            <li>Implemented an advanced accounting system, streamlining transaction recording and reporting for enhanced efficiency.</li>
-                            <li>Collaborated with non-finance departments to automate and prepare reports, improving cross-functional efficiency and data accessibility.</li>
-                            <li>Led the annual budgeting and forecasting process, ensuring alignment with organizational goals and objectives.</li>
-                            <li>Conducted regular financial analysis to identify trends, variances, and opportunities for improvement, assisting senior management in decision-making processes.</li>
-                            <li>Collaborated with internal and external auditors, ensuring compliance and smooth audit processes.</li>
-                        </ul>
-                    </div>
-                </div>
-        
-                <!-- Vertex Learning Solutions, UK -->
-                <div class="designation w-full mt-4">
-                    <span class="mr-2"><i class="fas fa-graduation-cap fa-lg text-purple-500"></i></span>
-                    <div>
-                        <span class="font-bold text-lg"> Vertex Learning Solutions , UK </span><br>
-                        <span>Learning Support Specialist (Remote Role)</span><br>
-                        <span>Mar 2022 – May 2023</span><br>
-                        <ul class="list-disc list-inside mt-2 text-base">
-                            <li>Assisted students in mastering ACCA exam techniques and time management skills.</li>
-                            <li>Mentored students through challenging ACCA subjects, boosting their confidence and competence.</li>
-                            <li>Developed and delivered comprehensive study materials tailored to ACCA exam requirements.</li>
-                            <li>Provided personalized tutoring for ACCA exam candidates, improving their understanding of key concepts.</li>
-                            <li>Monitored students' progress and provided targeted feedback to ensure continuous improvement in ACCA exam readiness.</li>
-                        </ul>
-                    </div>
-                </div>
-        
-                <!-- AH Accountants, Pakistan -->
-                <div class="designation w-full mt-4">
-                    <span class="mr-2"><i class="fas fa-calculator fa-lg text-green-500"></i></span>
-                    <div>
-                        <span class="font-bold text-lg">AH Accountants , Pakistan </span><br>
-                        <span>Audit Associate </span><br>
-                        <span>Mar 2018 – May 2022</span><br>
-                        <ul class="list-disc list-inside mt-2 text-base">
-                            <li>Prepared financial statements in Excel, ensuring adherence to International Financial Reporting Standards (IFRS).</li>
-                            <li>Reviewed financial statements and supporting documents for accuracy and completeness.</li>
-                            <li>Participated in fieldwork activities across diverse industries to meticulously gather sufficient and reliable audit evidence.</li>
-                            <li>Performed substantive tests on revenue, costs, expenses, assets, liabilities, and capital to validate their accuracy and compliance with IFRS.</li>
-                            <li>Evaluated internal controls and processes, identifying weaknesses and suggesting improvements.</li>
-                            <li>Conducted due diligence to assess the value and financial implications of acquisitions.</li>
-                            <li>Developed advanced financial models in Excel for accurate forecasting and projections.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-<!-- Projects Section -->
-<section id="projects" class="section py-16 bg-white-100">
-    <div class="section-content max-w-screen-lg mx-auto">
-        <h2 class="text-3xl font-semibold mb-10 text-gray-800 text-center">Explore My Latest Projects Below</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- First Project -->
-            <div class="group relative overflow-hidden border border-gray-300 rounded-lg bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <a href="https://github.com/Jamil-DataFinance/Financial-Model" target="_blank">
-                    <div class="overflow-hidden">
-                        <img src="Images/Financial Model.png" alt="Financial Model" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">Financial Model</h3>
-                        <p class="text-sm text-gray-600 mt-2">Tool: Excel</p>
-                        <p class="text-sm text-gray-600 mt-2">Detailed financial model created using Excel, including income statements, balance sheets, and cash flow statements.</p>
-                        <div class="mt-4">
-                            <span class="inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded hover:bg-blue-700 transition-colors duration-300">View Project</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Second Project -->
-            <div class="group relative overflow-hidden border border-gray-300 rounded-lg bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <a href="https://mavenanalytics.io/project/16822" target="_blank">
-                    <div class="overflow-hidden">
-                        <img src="Images/Maven Hospital challenge.png" alt="Maven Hospital Challenge" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">Maven Hospital Challenge</h3>
-                        <p class="text-sm text-gray-600 mt-2">Tool: Power BI</p>
-                        <p class="text-sm text-gray-600 mt-2">Dashboard created for Massachusetts General Hospital (MGH) focusing on KPI reporting for patient records using Power BI.</p>
-                        <div class="mt-4">
-                            <span class="inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded hover:bg-blue-700 transition-colors duration-300">View Project</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Third Project -->
-            <div class="group relative overflow-hidden border border-gray-300 rounded-lg bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <a href="https://github.com/Jamil-DataFinance/Financial_Reporting_in_PowerBI" target="_blank">
-                    <div class="overflow-hidden">
-                        <img src="Images/Balance Sheet.png" alt="Maven Hospital Challenge" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">Financial Reporting in Power BI</h3>
-                        <p class="text-sm text-gray-600 mt-2">Tool: SQL Server & Power BI</p>
-                        <p class="text-sm text-gray-600 mt-2">Created a Power BI financial dashboard using SQL data, featuring real-time financial statements with dynamic filtering and interactive visualizations </p>
-                        <div class="mt-4">
-                            <span class="inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded hover:bg-blue-700 transition-colors duration-300">View Project</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Third Project -->
-            <div class="group relative overflow-hidden border border-gray-300 rounded-lg bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <a href="https://github.com/Jamil-DataFinance/Ecommerce-Dashboard" target="_blank">
-                    <div class="overflow-hidden">
-                        <img src="Images/Ecommerce.png" alt="Maven Hospital Challenge" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">E commerce Performance and Stock status Dashbaord</h3>
-                        <p class="text-sm text-gray-600 mt-2">Tools: Excel & Power BI</p>
-                        <p class="text-sm text-gray-600 mt-2">Created an e-commerce dashboard in Power BI with sales vs. targets, average order value, stock status, customer value by territory, and top 10 customers </p>
-                        <div class="mt-4">
-                            <span class="inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded hover:bg-blue-700 transition-colors duration-300">View Project</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
-            <!-- Add more projects as needed -->
+        <div class="btn-row">
+          <a class="btn" href="#projects">View my work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
         </div>
+      </div>
     </div>
+
+    <div class="stats">
+      <div class="stat"><b>8+ yrs</b><span>Audit, accounting, FP&amp;A and BI</span></div>
+      <div class="stat"><b>85%</b><span>Less time spent on monthly reporting</span></div>
+      <div class="stat"><b>2 days</b><span>Faster month-end close</span></div>
+      <div class="stat"><b>3 countries</b><span>Multi-entity group across UAE, Qatar &amp; KSA</span></div>
+    </div>
+  </div>
 </section>
 
-<style>
-.group:hover img {
-    transform: scale(1.1);
-}
-.group:hover h3 {
-    color: #1d4ed8;
-}
-.group:hover .shadow-lg {
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-</style>
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio</div>
+    <h2>Selected projects</h2>
+    <p class="lead">Each project uses fictional data built to mirror real finance work. Click a project to see the
+      dashboards and a plain-English explanation of what it does.</p>
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        /* Custom styles for contact information */
-        .contact-info {
-            text-align: left;
-            margin-top: 2rem;
-            font-family: Arial, sans-serif;
-        }
-
-        .contact-info h2 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .contact-icons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .contact-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            color: #4A90E2;
-            font-size: 2rem;
-            transition: color 0.3s;
-            width: fit-content;
-            text-decoration: none;
-            margin-bottom: 1rem;
-        }
-
-        .contact-icons a:hover {
-            color: #3B82F6;
-        }
-
-        .contact-icons i {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            background-color: #E5E7EB;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 1rem;
-        }
-
-        .contact-icons p {
-            margin-left: 1rem;
-            font-size: 1.2rem;
-            color: #333;
-            transition: color 0.3s;
-            white-space: nowrap;
-        }
-
-        .contact-icons a:hover p {
-            color: #4A90E2;
-        }
-
-        .download-resume {
-            display: block;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 10px auto;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            width: fit-content;
-        }
-
-        .download-resume:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-
-<body>
- 
-
-    <div class="contact-info">
-        <h2> Please feel free to contact me via the options below </h2>
-        <div class="contact-icons">
-            <a href="https://wa.me/971566353172" title="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-                <p>+971 56 635 3172</p>
-            </a>
-            <a href="mailto:Jamil.akhunzada@gmail.com" title="Email">
-                <i class="fas fa-envelope"></i>
-                <p>Jamil.akhunzada@gmail.com</p>
-            </a>
-            <a href="https://github.com/Jamil-DataFinance" title="GitHub">
-                <i class="fab fa-github"></i>
-                <p>More Projects on Github</p>
-            </a>
-            <a href="https://www.linkedin.com/in/jamil-ur-rehman/" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-                <p>Jamil ur Rehman</p>
-            </a>
+    <div class="cards">
+      <a class="card" href="projects/consolidation.html">
+        <div class="thumb"><img src="assets/img/consolidation/executive-summary.png" alt="Group performance overview dashboard" loading="lazy"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">Group consolidation</span><span class="tag">IFRS 10</span><span class="tag">Power BI</span></div>
+          <h3>Multi-Entity Financial Consolidation</h3>
+          <p>One report that shows each company's own results, or the consolidated group, with one click.
+            It handles intercompany eliminations, investment elimination and non-controlling interest.</p>
+          <span class="more">View project →</span>
         </div>
+      </a>
+
+      <a class="card" href="projects/fpa-dashboard.html">
+        <div class="thumb"><img src="assets/img/fpa-dashboard/summary.png" alt="FP&A model summary dashboard" loading="lazy"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">FP&amp;A</span><span class="tag">Budget vs Actual</span><span class="tag">What-if</span></div>
+          <h3>FP&amp;A Decision Support Dashboard</h3>
+          <p>A 6-page performance pack covering sales, customers, profitability and receivables aging,
+            with a what-if model showing how changes in growth, costs and pricing move EBITDA.</p>
+          <span class="more">View project →</span>
+        </div>
+      </a>
+
+      <a class="card" href="projects/financial-reporting.html">
+        <div class="thumb"><img src="assets/img/financial-reporting/income-statement.png" alt="Income statement report in Power BI" loading="lazy"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">3 statements</span><span class="tag">SQL</span><span class="tag">Power BI</span></div>
+          <h3>Financial Statements in Power BI</h3>
+          <p>A full income statement, balance sheet and cash flow statement built straight from the
+            accounting database. The figures refresh automatically and check themselves for errors.</p>
+          <span class="more">View project →</span>
+        </div>
+      </a>
+
+      <a class="card" href="projects/five-year-model.html">
+        <div class="thumb"><img src="assets/img/five-year-model/dashboard.png" alt="Five-year financial model dashboard" loading="lazy"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">Excel</span><span class="tag">3-statement model</span><span class="tag">Forecasting</span></div>
+          <h3>Five-Year Financial Model</h3>
+          <p>A fully linked Excel model projecting the P&amp;L, balance sheet and cash flow five years ahead,
+            with supporting schedules and an executive dashboard. Available to download.</p>
+          <span class="more">View project →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Experience</div>
+    <h2>Where I've worked</h2>
+
+    <div class="timeline">
+      <div class="job">
+        <div class="job-head">
+          <div><h3>Financial Analyst</h3><div class="org">Hamilton Aquatics Group · Dubai, UAE</div></div>
+          <span class="date">Nov 2024 – Present</span>
+        </div>
+        <ul>
+          <li>Built a central Power BI reporting system that cut monthly reporting time by 85% and gives management real-time KPIs.</li>
+          <li>Own rolling forecasts, the annual budget and monthly variance analysis.</li>
+          <li>Built driver-based models for scenarios and sensitivities, cutting reforecasts from days to hours.</li>
+          <li>Automated parts of the month-end close with Python, saving 2 days each month.</li>
+          <li>Supported buy-side M&amp;A due diligence, including EBITDA normalisation and quality-of-earnings work.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div><h3>General Accountant</h3><div class="org">Hamilton Aquatics Group · Dubai, UAE</div></div>
+          <span class="date">Nov 2022 – Oct 2024</span>
+        </div>
+        <ul>
+          <li>Full-cycle AP, AR and GL accounting across group entities in Microsoft Dynamics 365 and Zoho.</li>
+          <li>Prepared monthly management accounts across a multi-entity structure.</li>
+          <li>Bank reconciliations, VAT-compliant refunds and credit notes, with zero material audit findings.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div><h3>Audit Associate</h3><div class="org">AH Accountants · Pakistan</div></div>
+          <span class="date">Mar 2018 – May 2022</span>
+        </div>
+        <ul>
+          <li>External audits and financial statement reviews across multiple clients and industries.</li>
+          <li>Evaluated internal controls and reported findings and recommendations to management.</li>
+        </ul>
+      </div>
     </div>
 
-    
-    <a href="https://drive.google.com/file/d/1Z865vQ7qVPVBTs4BIuRsGFuStxWb-aRw/view?usp=sharing" class="download-resume">Download Resume</a>
+    <h3 style="margin-top:40px">Qualifications</h3>
+    <div class="certs">
+      <div class="cert"><div><b>ACCA</b><small>Chartered Certified Accountant</small></div><span class="date">2022</span></div>
+      <div class="cert"><div><b>MSc Economics</b><small>University of Science &amp; Technology, Bannu</small></div><span class="date">2022</span></div>
+      <div class="cert"><div><b>FMVA</b><small>Financial Modelling &amp; Valuation Analyst (CFI)</small></div><span class="date">2024</span></div>
+      <div class="cert"><div><b>BIDA®</b><small>Business Intelligence &amp; Data Analyst (CFI)</small></div><span class="date">2024</span></div>
+      <div class="cert"><div><b>FPWM™</b><small>Financial Planning &amp; Wealth Management (CFI)</small></div></div>
+      <div class="cert"><div><b>Business Intelligence Analyst</b><small>Certificate</small></div></div>
+      <div class="cert"><div><b>Data Science</b><small>Certificate</small></div></div>
+      <div class="cert"><div><b>UAE Taxation</b><small>Corporate Tax &amp; VAT</small></div></div>
+    </div>
+  </div>
+</section>
 
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2>Let's talk</h2>
+    <p class="lead">Open to FP&amp;A, financial analysis and finance business-partnering roles in the UAE or abroad.</p>
+    <div class="btn-row">
+      <a class="btn" href="mailto:jamil.akhunzada@gmail.com">jamil.akhunzada@gmail.com</a>
+      <a class="btn ghost" href="https://wa.me/971566353172" target="_blank" rel="noopener">WhatsApp +971 56 635 3172</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/jamil-ur-rehman-acca" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="assets/files/Jamil-Ur-Rehman-CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
+    <span>All project data is fictional and created for demonstration.</span>
+  </div>
+</footer>
+
+<script src="assets/js/site.js?v=3"></script>
 </body>
-
 </html>
-
-
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-white text-center py-4">
-          © 2024 Jamil ur Rehman. All rights reserved.
-            No part of this website may be reproduced without permission.
-            For inquiries, contact: Jamil.Akhunzada@gmail.com</p>
-    </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const sections = document.querySelectorAll('.nav-link');
-            sections.forEach(section => {
-                section.addEventListener('click', function () {
-                    const sectionId = section.getAttribute('data-section');
-                    const currentSection = document.querySelector('.section:not(.hidden)');
-                    const newSection = document.getElementById(sectionId);
-                    if (currentSection) {
-                        currentSection.classList.add('hidden');
-                    }
-                    newSection.classList.remove('hidden');
-                });
-            });
-        });
-    </script>
-</body>
-
-</html>
-
