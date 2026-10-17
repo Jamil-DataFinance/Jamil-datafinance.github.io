@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HR Analytics Dashboard | Jamil Ur Rehman</title>
+  <meta name="description" content="A 4-page Power BI HR dashboard: headcount, demographics, employee performance tracking and attrition by role, age group and year.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=5">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+</header>
+
+<section class="p-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html#projects">← All projects</a></div>
+    <div class="eyebrow">People analytics · Power BI</div>
+    <h1>HR Analytics Dashboard</h1>
+    <p class="lead">A four-page Power BI report on a 1,470-person workforce: who works where, how the
+      workforce is made up, how each employee's reviews have moved over time, and where staff turnover is highest.</p>
+    <div class="glance">
+      <div><small>Workforce</small><b>1,470 employees, 2012–2022</b></div>
+      <div><small>Pages</small><b>4 report pages</b></div>
+      <div><small>Covers</small><b>Headcount, demographics, reviews, attrition</b></div>
+      <div><small>Built with</small><b>Power BI, DAX, Power Query</b></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <div class="eyebrow">The problem</div>
+      <h2>Staff costs need people data behind them</h2>
+      <p>Payroll is usually the largest cost line, but the information that drives it (headcount by
+        department, who is leaving, and why) tends to sit in HR spreadsheets that finance never sees.</p>
+      <p>Without it, headcount budgets and hiring plans are built on last year's numbers rather than on
+        what is actually happening in the workforce.</p>
+    </div>
+    <div>
+      <div class="eyebrow">What I built</div>
+      <ul class="ticks">
+        <li><b>Cleaned the employee data</b> in Power Query: removed duplicates and filled gaps.</li>
+        <li>Added <b>age bands</b> and an <b>attrition rate</b> so turnover can be compared fairly across groups.</li>
+        <li>A <b>headcount overview</b> by department and role, with hiring and leavers by year.</li>
+        <li>An <b>employee tracker</b> that shows one person's review scores over five years.</li>
+        <li>An <b>attrition page</b> showing turnover by year, job role, age band and gender.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">The report</div>
+    <h2>What it looks like</h2>
+    <p class="hint">Click any image to view it full size.</p>
+
+    <div class="shots">
+      <div class="shot">
+        <h3>1. Overview</h3>
+        <figcaption>Total, active and inactive employees with an overall attrition rate of 16.1%. Hiring by year
+          split between staff who stayed and those who left, active headcount by department, and the five
+          largest job roles.</figcaption>
+        <figure><img src="../assets/img/hr-analytics/overview.png" alt="HR overview dashboard"></figure>
+      </div>
+
+      <div class="shot">
+        <h3>2. Employee demographics</h3>
+        <figcaption>The age profile of the workforce (most staff are in their twenties), the gender mix within
+          each age band, marital status, and headcount alongside average salary by ethnicity.</figcaption>
+        <figure><img src="../assets/img/hr-analytics/demographics.png" alt="Employee demographics dashboard"></figure>
+      </div>
+
+      <div class="shot">
+        <h3>3. Employee performance tracker</h3>
+        <figcaption>Pick any employee to see their department, salary, start date and latest review date, with
+          job satisfaction, work-life balance, self rating and manager rating plotted across each review year.</figcaption>
+        <figure><img src="../assets/img/hr-analytics/tracker.png" alt="Employee performance tracker"></figure>
+      </div>
+
+      <div class="shot">
+        <h3>4. Attrition</h3>
+        <figcaption>Turnover by year (peaking at 22% in 2020), by job role (sales representatives and recruiters
+          leave most often), by age band (highest in the twenties, lowest over fifty), by overtime and by gender.</figcaption>
+        <figure><img src="../assets/img/hr-analytics/attrition.png" alt="Attrition dashboard"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Why it matters</div>
+    <h2>What this shows</h2>
+    <ul class="ticks">
+      <li>Turning raw HR records into figures finance can use for headcount and payroll planning.</li>
+      <li>Spotting where turnover is concentrated, so hiring and retention spend can be targeted.</li>
+      <li>Designing interactive reports that let managers filter by department, role, age and gender.</li>
+    </ul>
+    <div class="callout"><p>The company and employees are fictional, created for practice. No real employee data is used.</p></div>
+    <p style="margin-top:18px" class="hint">For technical readers: the Power BI file is on <a href="https://github.com/Jamil-DataFinance/HR-Analytics" target="_blank" rel="noopener">GitHub</a>.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap next">
+    <a href="five-year-model.html"><small>← Previous project</small><b>Integrated 5-Year Financial Modelling &amp; Valuation</b></a>
+    <a href="../index.html#projects" style="text-align:right"><small>Back to →</small><b>All projects</b></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
+    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js?v=3"></script>
+</body>
+</html>
