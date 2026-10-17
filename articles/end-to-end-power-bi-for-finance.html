@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Approach to End-to-End Power BI for Finance | Jamil Ur Rehman</title>
+  <meta name="description" content="How I build Power BI solutions for finance, from validating raw data and designing the model to DAX, report design, peer review and secure deployment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=7">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#insights">Insights</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+</header>
+
+<section class="p-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html#insights">← All insights</a></div>
+    <div class="eyebrow">Article · Power BI</div>
+    <h1>My Approach to Building End-to-End Power BI Solutions for Finance</h1>
+    <p class="lead">A good finance dashboard starts long before the first chart: with the data, the model and the
+      numbers people need to trust.</p>
+    <div class="byline">By Jamil Ur Rehman · 5 min read</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <p>When people see a Power BI dashboard, they see the visuals. What they don't see is the work underneath:
+      understanding the data, checking the numbers, and working out what the business actually needs to know.
+      That's where most of the value is, and where most dashboards go wrong.</p>
+
+    <p>As a finance professional, my approach has always been simple:</p>
+
+    <blockquote>Keep it simple, focus on what matters, and let the data tell the story.</blockquote>
+
+    <p>Here's how that works, step by step.</p>
+
+    <h2>1. Start with the data, not the dashboard</h2>
+    <p>Before building anything, I explore the data (exploratory data analysis, or EDA) to understand its
+      structure, quality and consistency. I look for missing values, duplicates, inconsistent mappings, figures
+      that don't look right, and anything that won't reconcile.</p>
+    <p>The aim is to find problems early, while they're cheap to fix, and to make sure the data follows the
+      business and financial logic behind it. A dashboard built on numbers nobody has checked is just a
+      faster way to spread mistakes.</p>
+
+    <h2>2. Build a pipeline that refreshes itself</h2>
+    <p>Once the data checks out, I decide the best way to bring it into Power BI. Depending on the source and the
+      setup, that could be Excel or database files, APIs, Power BI dataflows (Gen1 or Gen2), shared semantic models
+      or Microsoft Fabric warehouses.</p>
+    <p>I use Power Query for the cleaning and transformation: setting the right data types, mapping accounts and
+      entities, handling gaps and removing columns nobody needs. The rule I follow is that <b>every step should be
+      repeatable</b>. If a refresh needs someone to fix the data by hand first, the job isn't finished.</p>
+
+    <h2>3. Get the data model right</h2>
+    <p>The data model is the foundation everything else stands on. I generally use a <b>star schema</b>: one or more
+      fact tables (the transactions) surrounded by clear dimension tables (dates, accounts, entities, customers).
+      It keeps relationships easy to follow, calculations consistent and reports fast.</p>
+    <p>A snowflake schema can make sense when the underlying data really calls for it. Either way, the priority is
+      a model that is accurate, easy to maintain and fit for the reporting it needs to support. You can see this in
+      my <a href="../projects/consolidation.html">consolidated financial statements</a> project, where one model
+      serves both single-entity and group reporting.</p>
+
+    <h2>4. Write the financial logic before the visuals</h2>
+    <p>Before I think about charts, I build the DAX measures that explain performance. For finance reporting that
+      usually means:</p>
+    <ul class="ticks">
+      <li>Current-year actuals, budget and prior-year actuals</li>
+      <li>Variances in value and in percentage terms</li>
+      <li>The financial KPIs that matter for the business, such as margins and EBITDA</li>
+    </ul>
+    <p>Then I test those measures across periods, entities and the other key dimensions, to make sure they still
+      give the right answer however the report is sliced. Getting the financial logic right matters far more than
+      making the dashboard look impressive.</p>
+
+    <h2>5. Design for decisions, not decoration</h2>
+    <p>My design rule is <b>less is more</b>. I put what management needs to see first at the top: clear KPI cards,
+      trends, comparisons and variances, instead of filling every corner of the page with charts.</p>
+    <p>In finance, the comparison of this year's actuals against budget and last year usually tells you where the
+      business stands and what needs attention. Features like <b>drill-through</b> let users dig into the detail
+      behind a number, and <b>bookmarks</b> help present selected views or highlight a key insight. Every visual has
+      to earn its place by answering a real business question. My
+      <a href="../projects/fpa-dashboard.html">FP&amp;A &amp; Financial Performance Dashboard</a> is built on this idea.</p>
+
+    <h2>6. Review, publish and secure</h2>
+    <p>Before anything goes live, I ask a colleague to review it: to challenge the calculations, check the outputs
+      and spot anything I've missed. A second pair of eyes catches what the developer has stopped seeing.</p>
+    <p>Then I publish the report to the right Power BI workspace, set up and test <b>row-level security (RLS)</b>
+      where people should only see their own entity or area, and update the Power BI app so the intended audience
+      can access it.</p>
+    <p>Finally, I check the refresh schedule, the permissions and the experience from the user's side. A report
+      isn't finished just because it works on my desktop. It's finished when it works reliably for the people
+      who depend on it.</p>
+
+    <h2>Final thoughts</h2>
+    <p>My approach combines financial discipline with data modelling, automation and thoughtful design. Every stage,
+      from checking the raw data to deploying a secure report, adds to how reliable the final result is.</p>
+    <p>The goal isn't to build the most complicated dashboard. It's to build one that people <b>trust, understand
+      and actually use</b> to make better decisions.</p>
+
+    <div class="callout"><p><b>Validate the data. Get the model right. Trust the measures. Keep the design simple. Secure the delivery.</b></p></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap next">
+    <a href="excel-power-query-power-bi.html"><small>More insights →</small><b>Excel, Power Query or Power BI? Choosing the Right Tools for AI-Powered FP&amp;A</b></a>
+    <a href="automating-financial-reporting.html"><small>More insights →</small><b>Automating Financial Reporting with AI</b></a>
+    <a href="ai-finding-answers-faster.html"><small>More insights →</small><b>How AI Can Help Finance Teams Find Answers Faster</b></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
+    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js?v=3"></script>
+</body>
+</html>
