@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automating Financial Reporting with AI | Jamil Ur Rehman</title>
+  <meta name="description" content="How I use AI coding assistants, Python, Excel and Power Automate to automate finance reporting, without giving AI access to confidential financial data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=6">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#insights">Insights</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+</header>
+
+<section class="p-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html#insights">← All insights</a></div>
+    <div class="eyebrow">Article · AI in finance</div>
+    <h1>Automating Financial Reporting with AI</h1>
+    <p class="lead">How I use AI to build reporting tools that save hours every month, while keeping the
+      company's financial data away from AI altogether.</p>
+    <div class="byline">By Jamil Ur Rehman · 4 min read</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <p>Every finance team knows the routine. Download the bank statements. Paste them into last month's
+      workbook. Fix the columns that moved. Run the same lookups, find the same exceptions, rebuild the same
+      summary. None of it is difficult, but it eats hours, and repetitive work is exactly where mistakes creep in.</p>
+
+    <p>I've changed how I handle that work. AI hasn't taken over my reporting. What it has done is help me
+      <b>build the tools</b> that take over the repetitive part. Once a tool is built, the AI steps out of the picture.</p>
+
+    <blockquote>Use AI to build the tool, not to run it.</blockquote>
+
+    <h2>1. Build and test with AI, using made-up data</h2>
+    <p>I develop each script in Jupyter Notebook with an AI coding assistant. I describe the task the way I'd
+      brief a new team member: <i>"match these bank lines to the payment gateway report, flag anything that
+      doesn't tie, and give me an Excel workbook laid out like this."</i></p>
+    <p>The AI drafts the Python code. I test it on <b>fictitious or anonymised data</b> that has the same columns
+      and quirks as the real files. Then I check the output the way I'd review anyone's work: totals,
+      edge cases, and the odd transaction that never quite fits.</p>
+
+    <h2>2. Run it on real data, with no AI involved</h2>
+    <p>Once a script is right, it's just Python. It runs inside the company's own environment, reads the real
+      files and writes the Excel report. <b>No language model ever sees the financial data.</b></p>
+    <p>A simple Windows batch file (.bat) means the process runs with a double-click. Lightweight reports that
+      used to take an afternoon are ready in seconds, and they're built the same way every time.</p>
+
+    <h2>3. Let Power Automate do the admin</h2>
+    <p>Power Automate picks up statements and reports that arrive by email, saves the attachments into the right
+      folders and starts the process. After I review the output, it can be emailed to the right people or
+      prepared as an ERP upload file. Once the entries are posted, another flow files everything away.</p>
+
+    <div class="flow" aria-label="Workflow">
+      <span>Email attachment</span><i>→</i>
+      <span>Power Automate</span><i>→</i>
+      <span>Python script (.bat)</span><i>→</i>
+      <span>Excel report</span><i>→</i>
+      <span>Human review</span><i>→</i>
+      <span>Email / ERP upload</span>
+    </div>
+
+    <h2>Security comes first, by design</h2>
+    <p>Financial data is confidential, and in finance "move fast" is never a good enough reason to take risks
+      with it. The whole approach rests on keeping <b>building</b> and <b>running</b> apart:</p>
+    <ul class="ticks">
+      <li><b>Building:</b> AI helps write and improve the code, using dummy or anonymised data only.</li>
+      <li><b>Running:</b> real data is processed only in approved company environments, with the usual access controls.</li>
+    </ul>
+    <p>That way the team gets the speed of AI without routinely exposing confidential information to it.</p>
+
+    <h2>What changes in practice</h2>
+    <ul class="ticks">
+      <li><b>Less copy-and-paste</b>, and more time spent understanding what the numbers are saying.</li>
+      <li><b>Consistent output</b>: the same logic runs every month, which makes the work easier to review and audit.</li>
+      <li><b>Faster close</b>: in my own role, this kind of automation has helped take around two days off month-end.</li>
+      <li><b>People still decide</b>: I review and sign off every output. Automation prepares the work; judgement stays human.</li>
+    </ul>
+
+    <p>The point is simple: take the repetitive work off finance teams so they can spend their time on
+      analysis, business partnering and better decisions.</p>
+
+    <div class="callout"><p><b>Use AI to build smarter tools. Use Python to run them. Keep financial data secure, and keep the judgement human.</b></p></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Want to talk about automating your reporting?</h2>
+    <div class="btn-row">
+      <a class="btn" href="mailto:jamil.akhunzada@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/jamil-ur-rehman-acca" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <a class="btn ghost" href="../index.html#projects">See my projects</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
+    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js?v=3"></script>
+</body>
+</html>
