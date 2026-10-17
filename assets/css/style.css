@@ -217,6 +217,11 @@ table.simple th { background: var(--navy); color: #fff; font-weight: 600; }
 }
 .prose .ticks { margin: 0 0 1em; }
 .prose .flow { margin: 22px 0 8px; }
+.prose .best { background: var(--bg-alt); border-radius: 8px; padding: 10px 14px; font-size: .95rem; }
+.prose table.simple { margin-bottom: 8px; }
+.steps { padding-left: 22px; margin: 0 0 1em; }
+.steps li { margin-bottom: 8px; padding-left: 4px; }
+.steps li::marker { color: var(--teal); font-weight: 800; }
 
 /* ---------- lightbox ---------- */
 .lightbox {

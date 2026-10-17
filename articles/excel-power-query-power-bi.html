@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Excel, Power Query or Power BI? | Jamil Ur Rehman</title>
+  <meta name="description" content="How Excel, Power Query, Power BI, Python and AI each fit into a modern FP&A workflow, and how to choose the right tool for each job.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=7">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#insights">Insights</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+</header>
+
+<section class="p-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html#insights">← All insights</a></div>
+    <div class="eyebrow">Article · FP&amp;A tools</div>
+    <h1>Excel, Power Query or Power BI? Choosing the Right Tools for AI-Powered FP&amp;A</h1>
+    <p class="lead">They aren't rivals. Here's how I decide which tool does which job, and where Python and AI fit in.</p>
+    <div class="byline">By Jamil Ur Rehman · 6 min read</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose">
+    <p>"Which is better, Excel or Power BI?" I hear this question a lot, and I think it's the wrong one to ask.</p>
+
+    <p>FP&amp;A today is less about producing spreadsheets and more about building a workflow: reliable data
+      coming in, automated analysis in the middle, and better decisions coming out. Each tool owns a different part
+      of that journey. Add AI and Python, and the repetitive parts shrink even further, leaving more time for the
+      analysis that actually moves the business.</p>
+
+    <h2>The short version</h2>
+    <table class="simple">
+      <thead><tr><th>Tool</th><th>What I use it for</th><th>Where AI helps</th></tr></thead>
+      <tbody>
+        <tr><td><b>Excel</b></td><td>Budgets, forecasts, financial models, scenarios</td><td>Drafting and explaining formulas, finding errors</td></tr>
+        <tr><td><b>Power Query</b></td><td>Cleaning, combining and mapping raw data</td><td>Writing and fixing M code</td></tr>
+        <tr><td><b>Power BI</b></td><td>Dashboards, KPIs, budget vs actual</td><td>Writing and debugging DAX, exploring trends</td></tr>
+        <tr><td><b>Python</b></td><td>Heavy processing, reconciliations, report automation</td><td>Writing and maintaining scripts</td></tr>
+      </tbody>
+    </table>
+
+    <h2>1. Excel: where the thinking happens</h2>
+    <p>Excel is still where I build budgets, forecasts, three-statement models and scenarios. Nothing beats it for
+      flexible "what if" thinking: change one assumption and watch it flow through the P&amp;L, the balance sheet
+      and cash.</p>
+    <p>AI is a useful modelling partner. It can draft a tricky formula, explain one someone else wrote, or help find
+      why a balance sheet won't balance. But it doesn't own the model. Every assumption and every output still gets
+      checked by someone who understands the business.</p>
+    <p class="best"><b>Best for:</b> financial modelling, forecasting, scenario analysis and detailed decision support.</p>
+
+    <h2>2. Power Query: the end of copy-and-paste</h2>
+    <p>A surprising amount of FP&amp;A time disappears before any analysis starts: combining twelve monthly files,
+      fixing account codes that changed, mapping several entities to one chart of accounts. Power Query does this
+      once, then repeats it every month with a single click on Refresh.</p>
+    <p>When a step gets tricky, AI helps me write or fix the M code behind it. The result is a data preparation
+      process that is documented, repeatable and identical every month.</p>
+    <p class="best"><b>Best for:</b> data cleaning, consolidation, transformation and repeatable reporting.</p>
+
+    <h2>3. Power BI: answering management's questions</h2>
+    <p>Power BI turns clean data into interactive dashboards: revenue, EBITDA, budget variances, margins and working
+      capital, for one entity or the whole group.</p>
+    <p>AI helps me write and debug DAX measures, and depending on the tools and licences available, built-in AI
+      features can help users explore the data and summarise trends. But the real value isn't in the visuals. It comes
+      from a sound data model, measures you can trust, and pages designed around the questions management actually
+      asks. You can see this approach in my <a href="../projects/fpa-dashboard.html">FP&amp;A &amp; Financial Performance Dashboard</a>.</p>
+    <p class="best"><b>Best for:</b> management reporting, KPI monitoring, multi-entity analysis and investigating performance.</p>
+
+    <h2>4. Python and AI: when spreadsheets aren't enough</h2>
+    <p>Some jobs outgrow spreadsheets: matching thousands of transactions, handling dozens of files, or calculations
+      too complex to maintain safely in formulas. Python handles these comfortably. It processes the data, runs
+      validation checks and writes the finished Excel report.</p>
+    <p>AI coding assistants make these scripts much faster to build and maintain. Once tested, the scripts run on their
+      own inside approved company systems, so production financial data isn't sent to an AI model, as long as the
+      workflow itself doesn't pass that data through other outside services. I've written more about this in
+      <a href="automating-financial-reporting.html">Automating Financial Reporting with AI</a>.</p>
+    <p class="best"><b>Best for:</b> complex data processing, repeatable reconciliations, bespoke analysis and reporting automation.</p>
+
+    <h2>How the tools work together</h2>
+    <p>Here's what a practical AI-assisted FP&amp;A workflow can look like:</p>
+    <ol class="steps">
+      <li><b>Power Automate</b> collects incoming files and saves them to the right folders.</li>
+      <li><b>Power Query or Python</b> cleans, maps and validates the financial data.</li>
+      <li><b>Power BI</b> shows actual performance, trends and budget variances.</li>
+      <li><b>Excel</b> supports detailed modelling and scenario analysis.</li>
+      <li><b>AI tools</b> help with building code, fixing problems and interpreting results, within approved data-security boundaries.</li>
+      <li><b>The analyst</b> checks the outputs, digs into what's driving the numbers, and explains it to management.</li>
+    </ol>
+    <p>Not every process needs all of these. I choose the combination based on data volume, how complex the process
+      is, what the report needs to show, and the systems already in place.</p>
+
+    <h2>The bottom line</h2>
+    <p>Excel, Power Query and Power BI aren't competing for the same job. They solve different problems. Python
+      extends what can be automated, and AI speeds up both the building and the analysis.</p>
+    <p>The real advantage doesn't come from any single tool. It comes from combining them with solid financial
+      knowledge, reliable data and good judgement.</p>
+
+    <div class="callout"><p><b>Use AI to speed up the work, automation to remove the repetition, and financial expertise to turn the results into better decisions.</b></p></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap next">
+    <a href="automating-financial-reporting.html"><small>More insights →</small><b>Automating Financial Reporting with AI</b></a>
+    <a href="../index.html#contact" style="text-align:right"><small>Let's talk →</small><b>Get in touch</b></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
+    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js?v=3"></script>
+</body>
+</html>
