@@ -12,44 +12,48 @@
     <feColorMatrix in="ghost" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .45 0" result="ghostFaint" />
     <feMerge><feMergeNode in="ghostFaint" /><feMergeNode in="main" /></feMerge>
   </filter>
+  <filter id="marker" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="11" result="m" />
+    <feDisplacementMap in="SourceGraphic" in2="m" scale="10" xChannelSelector="R" yChannelSelector="G" />
+  </filter>
 </defs><rect width="1000" height="420" fill="#fdfaf3" />
 
   
   <rect width="1000" height="420" fill="url(#grid)" /><g filter="url(#pen)"><rect x="40" y="50" width="400" height="320" rx="18" fill="#fff" stroke="#1d9e75" stroke-width="3" stroke-dasharray="12 8" />
-  <path transform="translate(110 200)" d="M0 -28 C4 -7 6 -4 28 0 C6 4 4 7 0 28 C-4 7 -6 4 -28 0 C-6 -4 -4 -7 0 -28Z" fill="#f2b84b" />
-  <path transform="translate(140 160)" d="M0 -12 C2 -3 3 -2 12 0 C3 2 2 3 0 12 C-2 3 -3 2 -12 0 C-3 -2 -2 -3 0 -12Z" fill="#f2b84b" />
-  <rect x="180" y="150" width="180" height="112" rx="8" fill="#1a2e4a" />
-  <rect x="192" y="162" width="156" height="88" rx="4" fill="#24406a" />
+  <path transform="translate(3 4) translate(110 200)" d="M0 -28 C4 -7 6 -4 28 0 C6 4 4 7 0 28 C-4 7 -6 4 -28 0 C-6 -4 -4 -7 0 -28Z" fill="#f7cf73" stroke="none" filter="url(#marker)" /><path transform="translate(110 200)" d="M0 -28 C4 -7 6 -4 28 0 C6 4 4 7 0 28 C-4 7 -6 4 -28 0 C-6 -4 -4 -7 0 -28Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <path transform="translate(3 4) translate(140 160)" d="M0 -12 C2 -3 3 -2 12 0 C3 2 2 3 0 12 C-2 3 -3 2 -12 0 C-3 -2 -2 -3 0 -12Z" fill="#f7cf73" stroke="none" filter="url(#marker)" /><path transform="translate(140 160)" d="M0 -12 C2 -3 3 -2 12 0 C3 2 2 3 0 12 C-2 3 -3 2 -12 0 C-3 -2 -2 -3 0 -12Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="180" y="150" width="180" height="112" rx="8" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="180" y="150" width="180" height="112" rx="8" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="192" y="162" width="156" height="88" rx="4" fill="#d3deec" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="192" y="162" width="156" height="88" rx="4" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
   <g stroke-width="7" stroke-linecap="round">
     <path d="M206 180 H262" stroke="#5cc4a2" /><path d="M220 198 H310" stroke="#8fb3d9" />
     <path d="M220 216 H290" stroke="#f2b84b" /><path d="M206 234 H250" stroke="#5cc4a2" />
   </g>
-  <rect x="165" y="262" width="210" height="12" rx="6" fill="#c9d6e6" />
-  <rect x="120" y="306" width="240" height="38" rx="19" fill="#e3f3ed" />
+  <rect x="165" y="262" width="210" height="12" rx="6" fill="#dbe4ef" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="165" y="262" width="210" height="12" rx="6" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="120" y="306" width="240" height="38" rx="19" fill="#e3f3ed" stroke="#22334a" stroke-width="2.2" />
   <g stroke="#1a2e4a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <path d="M452 215 H546" /><path d="M531 201 L548 215 L531 229" />
   </g>
   <rect x="560" y="50" width="400" height="320" rx="18" fill="#fff" stroke="#1a2e4a" stroke-width="3" />
   <g transform="translate(680 210)">
     <g fill="#1a2e4a">
-      <rect x="-11" y="-66" width="22" height="26" rx="5" />
-      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(45)" />
-      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(90)" />
-      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(135)" />
-      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(180)" />
-      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(225)" />
-      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(270)" />
-      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(315)" />
-      <circle r="50" />
+      <rect x="-11" y="-66" width="22" height="26" rx="5" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="-11" y="-66" width="22" height="26" rx="5" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="translate(3 4) rotate(45)" fill="#bccbdf" stroke="none" filter="url(#marker)" /><rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(45)" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="translate(3 4) rotate(90)" fill="#bccbdf" stroke="none" filter="url(#marker)" /><rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(90)" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="translate(3 4) rotate(135)" fill="#bccbdf" stroke="none" filter="url(#marker)" /><rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(135)" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="translate(3 4) rotate(180)" fill="#bccbdf" stroke="none" filter="url(#marker)" /><rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(180)" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="translate(3 4) rotate(225)" fill="#bccbdf" stroke="none" filter="url(#marker)" /><rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(225)" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="translate(3 4) rotate(270)" fill="#bccbdf" stroke="none" filter="url(#marker)" /><rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(270)" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+      <rect x="-11" y="-66" width="22" height="26" rx="5" transform="translate(3 4) rotate(315)" fill="#bccbdf" stroke="none" filter="url(#marker)" /><rect x="-11" y="-66" width="22" height="26" rx="5" transform="rotate(315)" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+      <circle r="50" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle r="50" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
     </g>
-    <circle r="28" fill="#fff" />
+    <circle r="28" fill="#fff" stroke="#22334a" stroke-width="2.2" />
     </g>
   <rect x="780" y="150" width="150" height="120" rx="10" fill="#fff" stroke="#7f8c9c" stroke-width="2" />
-  <rect x="780" y="150" width="150" height="28" rx="10" fill="#1a2e4a" />
-  <rect x="780" y="166" width="150" height="12" fill="#1a2e4a" />
+  <rect x="780" y="150" width="150" height="28" rx="10" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="780" y="150" width="150" height="28" rx="10" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="780" y="166" width="150" height="12" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="780" y="166" width="150" height="12" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
   <g stroke="#7f8c9c" stroke-width="2"><path d="M780 201 H930 M780 224 H930 M780 247 H930 M840 178 V270" /></g>
-  <g fill="#1d9e75"><rect x="850" y="185" width="62" height="9" rx="3" /><rect x="850" y="208" width="48" height="9" rx="3" /><rect x="850" y="231" width="66" height="9" rx="3" /><rect x="850" y="254" width="40" height="9" rx="3" /></g>
-  <rect x="610" y="306" width="300" height="38" rx="19" fill="#e8f0f9" />
+  <g fill="#1d9e75"><rect x="850" y="185" width="62" height="9" rx="3" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="850" y="185" width="62" height="9" rx="3" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" /><rect x="850" y="208" width="48" height="9" rx="3" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="850" y="208" width="48" height="9" rx="3" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" /><rect x="850" y="231" width="66" height="9" rx="3" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="850" y="231" width="66" height="9" rx="3" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" /><rect x="850" y="254" width="40" height="9" rx="3" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="850" y="254" width="40" height="9" rx="3" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" /></g>
+  <rect x="610" y="306" width="300" height="38" rx="19" fill="#e8f0f9" stroke="#22334a" stroke-width="2.2" />
   </g><g><text x="70" y="92" font-size="26" font-weight="700" fill="#1d9e75" letter-spacing="2">BUILD</text>
   <text x="70" y="116" font-size="23" fill="#5b6673">with AI, on dummy data</text>
   <text x="240" y="331" text-anchor="middle" font-size="22" font-weight="700" fill="#08503f">Dummy / anonymised data</text>

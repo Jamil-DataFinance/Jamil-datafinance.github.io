@@ -12,6 +12,10 @@
     <feColorMatrix in="ghost" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .45 0" result="ghostFaint" />
     <feMerge><feMergeNode in="ghostFaint" /><feMergeNode in="main" /></feMerge>
   </filter>
+  <filter id="marker" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="11" result="m" />
+    <feDisplacementMap in="SourceGraphic" in2="m" scale="10" xChannelSelector="R" yChannelSelector="G" />
+  </filter>
 </defs><rect width="1200" height="520" fill="#fdfaf3" />
   <rect width="1200" height="520" fill="url(#grid)" /><g filter="url(#pen)"><circle cx="1120" cy="480" r="160" fill="#e3f3ed" />
   <circle cx="60" cy="40" r="130" fill="#dfe9f5" />
@@ -31,41 +35,41 @@
 
   
   <g fill="#f2b84b">
-    <path transform="translate(266 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" />
-    <path transform="translate(546 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" />
-    <path transform="translate(826 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" />
-    <path transform="translate(1106 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" />
+    <path transform="translate(3 4) translate(266 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="#f7cf73" stroke="none" filter="url(#marker)" /><path transform="translate(266 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+    <path transform="translate(3 4) translate(546 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="#f7cf73" stroke="none" filter="url(#marker)" /><path transform="translate(546 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+    <path transform="translate(3 4) translate(826 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="#f7cf73" stroke="none" filter="url(#marker)" /><path transform="translate(826 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+    <path transform="translate(3 4) translate(1106 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="#f7cf73" stroke="none" filter="url(#marker)" /><path transform="translate(1106 116)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
   </g>
 
   
   <rect x="120" y="128" width="120" height="96" rx="8" fill="#e3f3ed" stroke="#08503f" stroke-width="3" />
   <path d="M160 128 V224 M200 128 V224 M120 160 H240 M120 192 H240" stroke="#08503f" stroke-width="3" />
-  <rect x="160" y="160" width="40" height="32" fill="#1d9e75" />
+  <rect x="160" y="160" width="40" height="32" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="160" y="160" width="40" height="32" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
 
   
-  <circle cx="417" cy="132" r="7" fill="#f2b84b" /><circle cx="442" cy="144" r="6" fill="#1d9e75" />
-  <circle cx="472" cy="128" r="8" fill="#8fb3d9" /><circle cx="502" cy="142" r="6" fill="#f2b84b" />
-  <circle cx="457" cy="118" r="5" fill="#1a2e4a" />
-  <path d="M405 160 H515 L475 200 V222 L445 236 V200 Z" fill="#1a2e4a" />
+  <circle cx="417" cy="132" r="7" fill="#f7cf73" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="417" cy="132" r="7" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" /><circle cx="442" cy="144" r="6" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="442" cy="144" r="6" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <circle cx="472" cy="128" r="8" fill="#c2d7ee" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="472" cy="128" r="8" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" /><circle cx="502" cy="142" r="6" fill="#f7cf73" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="502" cy="142" r="6" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <circle cx="457" cy="118" r="5" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="457" cy="118" r="5" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M405 160 H515 L475 200 V222 L445 236 V200 Z" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><path d="M405 160 H515 L475 200 V222 L445 236 V200 Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
 
   
   <path d="M672 236 H826" stroke="#7f8c9c" stroke-width="3" />
-  <rect x="682" y="186" width="26" height="50" rx="4" fill="#8fb3d9" />
-  <rect x="718" y="156" width="26" height="80" rx="4" fill="#1d9e75" />
-  <rect x="754" y="126" width="26" height="110" rx="4" fill="#1a2e4a" />
-  <rect x="790" y="171" width="26" height="65" rx="4" fill="#f2b84b" />
+  <rect x="682" y="186" width="26" height="50" rx="4" fill="#c2d7ee" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="682" y="186" width="26" height="50" rx="4" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="718" y="156" width="26" height="80" rx="4" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="718" y="156" width="26" height="80" rx="4" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="754" y="126" width="26" height="110" rx="4" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="754" y="126" width="26" height="110" rx="4" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="790" y="171" width="26" height="65" rx="4" fill="#f7cf73" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="790" y="171" width="26" height="65" rx="4" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
 
   
-  <rect x="955" y="125" width="130" height="105" rx="10" fill="#1a2e4a" />
-  <circle cx="972" cy="141" r="5" fill="#f2b84b" /><circle cx="987" cy="141" r="5" fill="#1d9e75" /><circle cx="1002" cy="141" r="5" fill="#fff" />
-  <rect x="360" y="405" width="480" height="64" rx="32" fill="#1a2e4a" />
-  <path transform="translate(420 437)" d="M0 -16 C2 -4 4 -2 16 0 C4 2 2 4 0 16 C-2 4 -4 2 -16 0 C-4 -2 -2 -4 0 -16Z" fill="#f2b84b" />
-  </g><g><text x="1020" y="202" text-anchor="middle" font-size="49" font-weight="700" fill="#5cc4a2">&lt;/&gt;</text>
+  <rect x="955" y="125" width="130" height="105" rx="10" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="955" y="125" width="130" height="105" rx="10" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <circle cx="972" cy="141" r="5" fill="#f7cf73" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="972" cy="141" r="5" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" /><circle cx="987" cy="141" r="5" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="987" cy="141" r="5" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" /><circle cx="1002" cy="141" r="5" fill="#fff" stroke="#22334a" stroke-width="2.2" />
+  <rect x="360" y="405" width="480" height="64" rx="32" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="360" y="405" width="480" height="64" rx="32" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <path transform="translate(3 4) translate(420 437)" d="M0 -16 C2 -4 4 -2 16 0 C4 2 2 4 0 16 C-2 4 -4 2 -16 0 C-4 -2 -2 -4 0 -16Z" fill="#f7cf73" stroke="none" filter="url(#marker)" /><path transform="translate(420 437)" d="M0 -16 C2 -4 4 -2 16 0 C4 2 2 4 0 16 C-2 4 -4 2 -16 0 C-4 -2 -2 -4 0 -16Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  </g><g><text x="1020" y="202" text-anchor="middle" font-size="49" font-weight="700" fill="#08503f">&lt;/&gt;</text>
 
   
   <g fill="#1a2e4a" font-size="35" font-weight="700" text-anchor="middle"><text x="180" y="278">Excel</text></g><g fill="#1a2e4a" font-size="35" font-weight="700" text-anchor="middle"><text x="460" y="278">Power Query</text>
     </g><g fill="#1a2e4a" font-size="35" font-weight="700" text-anchor="middle"><text x="740" y="278">Power BI</text></g><g fill="#1a2e4a" font-size="35" font-weight="700" text-anchor="middle"><text x="1020" y="278">Python</text>
   </g><g fill="#5b6673" font-size="25" text-anchor="middle"><text x="180" y="308">Model &amp; plan</text></g><g fill="#5b6673" font-size="25" text-anchor="middle"><text x="460" y="308">Clean &amp; combine</text>
     </g><g fill="#5b6673" font-size="25" text-anchor="middle"><text x="740" y="308">Report &amp; monitor</text></g><g fill="#5b6673" font-size="25" text-anchor="middle"><text x="1020" y="308">Automate at scale</text>
-  </g><text x="615" y="445" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">Better, faster decisions</text>
+  </g><text x="615" y="445" text-anchor="middle" font-size="32" font-weight="700" fill="#22334a">Better, faster decisions</text>
 </g></svg>

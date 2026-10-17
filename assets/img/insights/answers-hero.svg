@@ -12,6 +12,10 @@
     <feColorMatrix in="ghost" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .45 0" result="ghostFaint" />
     <feMerge><feMergeNode in="ghostFaint" /><feMergeNode in="main" /></feMerge>
   </filter>
+  <filter id="marker" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="11" result="m" />
+    <feDisplacementMap in="SourceGraphic" in2="m" scale="10" xChannelSelector="R" yChannelSelector="G" />
+  </filter>
 </defs><rect width="1200" height="520" fill="#fdfaf3" />
   <rect width="1200" height="520" fill="url(#grid)" /><g filter="url(#pen)"><circle cx="1110" cy="470" r="170" fill="#e3f3ed" />
   <circle cx="80" cy="40" r="140" fill="#dfe9f5" />
@@ -20,13 +24,13 @@
   <rect x="140" y="135" width="230" height="290" rx="14" fill="#fff" stroke="#7f8c9c" stroke-width="2" transform="rotate(-7 255 280)" />
   <rect x="170" y="120" width="230" height="290" rx="14" fill="#fff" stroke="#7f8c9c" stroke-width="2" transform="rotate(4 285 265)" />
   <rect x="160" y="110" width="240" height="300" rx="14" fill="#fff" stroke="#7f8c9c" stroke-width="2" />
-  <rect x="160" y="110" width="240" height="44" rx="14" fill="#1a2e4a" />
-  <rect x="160" y="136" width="240" height="18" fill="#1a2e4a" />
+  <rect x="160" y="110" width="240" height="44" rx="14" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="160" y="110" width="240" height="44" rx="14" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="160" y="136" width="240" height="18" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="160" y="136" width="240" height="18" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
   <g stroke="#7f8c9c" stroke-width="9" stroke-linecap="round">
     <path d="M190 182 H370 M190 208 H350 M190 234 H365 M190 260 H330 M190 320 H360 M190 346 H340 M190 372 H300" />
   </g>
   
-  <rect x="182" y="279" width="198" height="24" rx="6" fill="#f2b84b" opacity=".55" />
+  <rect x="182" y="279" width="198" height="24" rx="6" fill="#f7cf73" opacity=".55" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="182" y="279" width="198" height="24" rx="6" fill="none" opacity=".55" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
   <path d="M190 291 H368" stroke="#1a2e4a" stroke-width="9" stroke-linecap="round" />
 
   
@@ -34,21 +38,21 @@
   <path d="M380 337 L432 389" stroke="#1a2e4a" stroke-width="20" stroke-linecap="round" />
 
   
-  <circle cx="1048" cy="145" r="26" fill="#c9d6e6" />
-  <circle cx="1048" cy="137" r="9" fill="#fff" /><path d="M1032 160 a16 12 0 0 1 32 0" fill="#fff" />
+  <circle cx="1048" cy="145" r="26" fill="#dbe4ef" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="1048" cy="145" r="26" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <circle cx="1048" cy="137" r="9" fill="#fff" stroke="#22334a" stroke-width="2.2" /><path d="M1032 160 a16 12 0 0 1 32 0" fill="#fff" stroke="#22334a" stroke-width="2.2" />
   <rect x="580" y="110" width="440" height="70" rx="22" fill="#fff" stroke="#7f8c9c" stroke-width="2" />
-  <path transform="translate(492 248)" d="M0 -22 C3 -5 5 -3 22 0 C5 3 3 5 0 22 C-3 5 -5 3 -22 0 C-5 -3 -3 -5 0 -22Z" fill="#f2b84b" />
-  <rect x="530" y="210" width="560" height="140" rx="22" fill="#1a2e4a" />
-  <rect x="560" y="280" width="400" height="42" rx="21" fill="#e3f3ed" />
+  <path transform="translate(3 4) translate(492 248)" d="M0 -22 C3 -5 5 -3 22 0 C5 3 3 5 0 22 C-3 5 -5 3 -22 0 C-5 -3 -3 -5 0 -22Z" fill="#f7cf73" stroke="none" filter="url(#marker)" /><path transform="translate(492 248)" d="M0 -22 C3 -5 5 -3 22 0 C5 3 3 5 0 22 C-3 5 -5 3 -22 0 C-5 -3 -3 -5 0 -22Z" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="530" y="210" width="560" height="140" rx="22" fill="#bccbdf" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><rect x="530" y="210" width="560" height="140" rx="22" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="560" y="280" width="400" height="42" rx="21" fill="#e3f3ed" stroke="#22334a" stroke-width="2.2" />
   <rect x="578" y="290" width="16" height="21" rx="3" fill="none" stroke="#08503f" stroke-width="2.5" />
   <rect x="660" y="385" width="330" height="54" rx="27" fill="#fff" stroke="#1d9e75" stroke-width="2" />
-  <circle cx="692" cy="412" r="16" fill="#1d9e75" />
-  <path d="M684 412 L690 418 L701 406" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  </g><g><text x="185" y="139" font-size="23" font-weight="700" fill="#fff">CONTRACT</text>
+  <circle cx="692" cy="412" r="16" fill="#97dbc1" stroke="none" filter="url(#marker)" transform="translate(3 4)" /><circle cx="692" cy="412" r="16" fill="none" stroke="#22334a" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M684 412 L690 418 L701 406" fill="none" stroke="#22334a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g><g><text x="185" y="139" font-size="23" font-weight="700" fill="#22334a">CONTRACT</text>
   <text x="608" y="153" font-size="30" font-weight="600" fill="#1a2e4a">What payment terms did we agree?</text>
 
   
-  <text x="560" y="256" font-size="32" font-weight="700" fill="#fff">Net 45 days from invoice date.</text>
+  <text x="560" y="256" font-size="32" font-weight="700" fill="#22334a">Net 45 days from invoice date.</text>
   <text x="604" y="307" font-size="25" font-weight="700" fill="#08503f">Source: contract, p.4, clause 7.2</text>
 
   
