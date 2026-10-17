@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+  <rect width="1200" height="520" fill="#eef4fa"/>
+  <circle cx="1120" cy="40" r="150" fill="#e3f3ed"/>
+  <circle cx="70" cy="490" r="140" fill="#dfe9f5"/>
+
+  <!-- connectors -->
+  <g stroke="#1d9e75" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M232 230 H290"/><path d="M277 218 L292 230 L277 242"/>
+    <path d="M457 230 H515"/><path d="M502 218 L517 230 L502 242"/>
+    <path d="M682 230 H740"/><path d="M727 218 L742 230 L727 242"/>
+    <path d="M907 230 H965"/><path d="M952 218 L967 230 L952 242"/>
+  </g>
+
+  <!-- stage circles -->
+  <g fill="#fff" stroke="#dde3ea" stroke-width="3">
+    <circle cx="150" cy="230" r="80"/><circle cx="375" cy="230" r="80"/><circle cx="600" cy="230" r="80"/>
+    <circle cx="825" cy="230" r="80"/><circle cx="1050" cy="230" r="80"/>
+  </g>
+
+  <!-- 1 data source -->
+  <path d="M110 200 V262 A40 14 0 0 0 190 262 V200" fill="#1d9e75"/>
+  <ellipse cx="150" cy="200" rx="40" ry="14" fill="#5cc4a2"/>
+  <path d="M110 222 A40 14 0 0 0 190 222 M110 243 A40 14 0 0 0 190 243" fill="none" stroke="#fff" stroke-width="3"/>
+  <circle cx="183" cy="178" r="15" fill="#1a2e4a"/>
+  <path d="M176 178 L181 183 L190 173" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 2 transform -->
+  <circle cx="345" cy="180" r="6" fill="#f2b84b"/><circle cx="368" cy="190" r="5" fill="#1d9e75"/>
+  <circle cx="392" cy="176" r="7" fill="#8fb3d9"/><circle cx="412" cy="188" r="5" fill="#f2b84b"/>
+  <path d="M330 200 H420 L388 234 V262 L362 274 V234 Z" fill="#1a2e4a"/>
+
+  <!-- 3 star schema -->
+  <g stroke="#8fb3d9" stroke-width="4"><path d="M600 230 L558 190 M600 230 L642 190 M600 230 L558 270 M600 230 L642 270"/></g>
+  <g fill="#1d9e75">
+    <rect x="540" y="178" width="36" height="24" rx="5"/><rect x="624" y="178" width="36" height="24" rx="5"/>
+    <rect x="540" y="258" width="36" height="24" rx="5"/><rect x="624" y="258" width="36" height="24" rx="5"/>
+  </g>
+  <rect x="574" y="213" width="52" height="34" rx="6" fill="#1a2e4a"/>
+
+  <!-- 4 dashboard -->
+  <rect x="775" y="186" width="100" height="70" rx="8" fill="#1a2e4a"/>
+  <g fill="#e3f3ed"><rect x="785" y="195" width="24" height="12" rx="2"/><rect x="813" y="195" width="24" height="12" rx="2"/><rect x="841" y="195" width="24" height="12" rx="2"/></g>
+  <rect x="788" y="228" width="11" height="18" fill="#f2b84b"/><rect x="805" y="218" width="11" height="28" fill="#5cc4a2"/>
+  <rect x="822" y="223" width="11" height="23" fill="#8fb3d9"/><rect x="839" y="212" width="11" height="34" fill="#5cc4a2"/>
+  <rect x="816" y="256" width="18" height="10" fill="#1a2e4a"/><rect x="800" y="265" width="50" height="7" rx="3" fill="#1a2e4a"/>
+
+  <!-- 5 secure -->
+  <path d="M1050 182 L1086 196 V228 C1086 253 1070 268 1050 277 C1030 268 1014 253 1014 228 V196 Z" fill="#1d9e75"/>
+  <path d="M1034 228 L1046 240 L1067 216" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- labels -->
+  <g text-anchor="middle" fill="#1a2e4a" font-size="22" font-weight="800">
+    <text x="150" y="350">Validate</text><text x="375" y="350">Transform</text><text x="600" y="350">Model</text>
+    <text x="825" y="350">Visualise</text><text x="1050" y="350">Secure</text>
+  </g>
+  <g text-anchor="middle" fill="#5b6673" font-size="16">
+    <text x="150" y="377">EDA &amp; checks</text><text x="375" y="377">Power Query</text><text x="600" y="377">Star schema &amp; DAX</text>
+    <text x="825" y="377">Design for decisions</text><text x="1050" y="377">Review, RLS, publish</text>
+  </g>
+
+  <rect x="400" y="425" width="400" height="54" rx="27" fill="#1a2e4a"/>
+  <text x="600" y="459" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">A report people trust and use</text>
+</svg>

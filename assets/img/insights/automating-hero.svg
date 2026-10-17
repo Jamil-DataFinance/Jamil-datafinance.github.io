@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+  <rect width="1200" height="520" fill="#eef4fa"/>
+  <circle cx="1100" cy="60" r="170" fill="#e3f3ed"/>
+  <circle cx="70" cy="500" r="140" fill="#dfe9f5"/>
+
+  <!-- arrows -->
+  <g stroke="#1d9e75" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M350 250 H440"/><path d="M425 236 L442 250 L425 264"/>
+    <path d="M712 250 H796"/><path d="M781 236 L798 250 L781 264"/>
+  </g>
+
+  <!-- email with attachment -->
+  <rect x="100" y="160" width="230" height="180" rx="18" fill="#fff" stroke="#dde3ea" stroke-width="2"/>
+  <rect x="140" y="200" width="150" height="100" rx="10" fill="#e3f3ed" stroke="#1d9e75" stroke-width="4"/>
+  <path d="M142 206 L215 258 L288 206" fill="none" stroke="#1d9e75" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="255" y="172" width="52" height="66" rx="7" fill="#fff" stroke="#1a2e4a" stroke-width="3"/>
+  <path d="M266 192 H296 M266 204 H296 M266 216 H286" stroke="#1a2e4a" stroke-width="3" stroke-linecap="round"/>
+  <text x="215" y="378" text-anchor="middle" font-size="20" font-weight="700" fill="#1a2e4a">Email attachment</text>
+
+  <!-- AI sparkle: helps build the script -->
+  <path transform="translate(470 100)" d="M0 -30 C4 -7 7 -4 30 0 C7 4 4 7 0 30 C-4 7 -7 4 -30 0 C-7 -4 -4 -7 0 -30Z" fill="#f2b84b"/>
+  <path transform="translate(512 62)" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z" fill="#f2b84b"/>
+  <path d="M492 122 Q522 134 536 160" fill="none" stroke="#f2b84b" stroke-width="3" stroke-dasharray="6 6"/>
+  <text x="535" y="68" font-size="18" font-weight="700" fill="#08503f">AI helps build it</text>
+
+  <!-- gear = Python script -->
+  <g transform="translate(580 250)">
+    <g fill="#1a2e4a">
+      <rect x="-17" y="-104" width="34" height="40" rx="7"/>
+      <rect x="-17" y="-104" width="34" height="40" rx="7" transform="rotate(45)"/>
+      <rect x="-17" y="-104" width="34" height="40" rx="7" transform="rotate(90)"/>
+      <rect x="-17" y="-104" width="34" height="40" rx="7" transform="rotate(135)"/>
+      <rect x="-17" y="-104" width="34" height="40" rx="7" transform="rotate(180)"/>
+      <rect x="-17" y="-104" width="34" height="40" rx="7" transform="rotate(225)"/>
+      <rect x="-17" y="-104" width="34" height="40" rx="7" transform="rotate(270)"/>
+      <rect x="-17" y="-104" width="34" height="40" rx="7" transform="rotate(315)"/>
+      <circle r="80"/>
+    </g>
+    <circle r="46" fill="#eef4fa"/>
+    <text y="11" text-anchor="middle" font-size="30" font-weight="800" fill="#1d9e75">&lt;/&gt;</text>
+  </g>
+  <text x="580" y="378" text-anchor="middle" font-size="20" font-weight="700" fill="#1a2e4a">Python script</text>
+
+  <!-- Excel report -->
+  <rect x="820" y="150" width="270" height="200" rx="16" fill="#fff" stroke="#dde3ea" stroke-width="2"/>
+  <rect x="820" y="150" width="270" height="42" rx="16" fill="#1a2e4a"/>
+  <rect x="820" y="174" width="270" height="18" fill="#1a2e4a"/>
+  <g stroke="#dde3ea" stroke-width="2">
+    <path d="M820 224 H1090 M820 256 H1090 M820 288 H1090 M820 320 H1090"/>
+    <path d="M900 192 V350 M990 192 V350"/>
+  </g>
+  <g fill="#c9d6e6">
+    <rect x="836" y="202" width="50" height="12" rx="4"/><rect x="836" y="234" width="44" height="12" rx="4"/>
+    <rect x="836" y="266" width="52" height="12" rx="4"/><rect x="836" y="298" width="40" height="12" rx="4"/>
+    <rect x="914" y="202" width="62" height="12" rx="4"/><rect x="914" y="234" width="56" height="12" rx="4"/>
+    <rect x="914" y="266" width="66" height="12" rx="4"/><rect x="914" y="298" width="50" height="12" rx="4"/>
+  </g>
+  <g fill="#1d9e75">
+    <rect x="1004" y="202" width="70" height="12" rx="4"/><rect x="1004" y="234" width="60" height="12" rx="4"/>
+    <rect x="1004" y="266" width="72" height="12" rx="4"/><rect x="1004" y="298" width="54" height="12" rx="4"/>
+  </g>
+  <circle cx="1088" cy="152" r="30" fill="#1d9e75" stroke="#fff" stroke-width="5"/>
+  <path d="M1074 152 L1085 163 L1103 142" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="955" y="378" text-anchor="middle" font-size="20" font-weight="700" fill="#1a2e4a">Excel report in seconds</text>
+
+  <!-- security pill -->
+  <rect x="345" y="420" width="510" height="58" rx="29" fill="#fff" stroke="#1d9e75" stroke-width="2"/>
+  <path d="M392 432 L411 439 V454 C411 466 403 473 392 477 C381 473 373 466 373 454 V439 Z" fill="#1a2e4a"/>
+  <rect x="386" y="452" width="12" height="10" rx="2" fill="#fff"/>
+  <path d="M388 452 V448 a4 4 0 0 1 8 0 V452" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <text x="425" y="456" font-size="19" font-weight="600" fill="#1a2e4a">Real financial data stays inside the company</text>
+</svg>

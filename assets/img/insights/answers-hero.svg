@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+  <rect width="1200" height="520" fill="#eef4fa"/>
+  <circle cx="1110" cy="470" r="170" fill="#e3f3ed"/>
+  <circle cx="80" cy="40" r="140" fill="#dfe9f5"/>
+
+  <!-- stack of documents -->
+  <rect x="140" y="135" width="230" height="290" rx="14" fill="#fff" stroke="#c9d6e6" stroke-width="2" transform="rotate(-7 255 280)"/>
+  <rect x="170" y="120" width="230" height="290" rx="14" fill="#fff" stroke="#c9d6e6" stroke-width="2" transform="rotate(4 285 265)"/>
+  <rect x="160" y="110" width="240" height="300" rx="14" fill="#fff" stroke="#c9d6e6" stroke-width="2"/>
+  <rect x="160" y="110" width="240" height="44" rx="14" fill="#1a2e4a"/>
+  <rect x="160" y="136" width="240" height="18" fill="#1a2e4a"/>
+  <text x="185" y="139" font-size="16" font-weight="700" fill="#fff">CONTRACT</text>
+  <g stroke="#dde3ea" stroke-width="9" stroke-linecap="round">
+    <path d="M190 182 H370 M190 208 H350 M190 234 H365 M190 260 H330 M190 320 H360 M190 346 H340 M190 372 H300"/>
+  </g>
+  <!-- highlighted clause -->
+  <rect x="182" y="279" width="198" height="24" rx="6" fill="#f2b84b" opacity=".55"/>
+  <path d="M190 291 H368" stroke="#1a2e4a" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- magnifier -->
+  <circle cx="335" cy="292" r="62" fill="#fff" fill-opacity=".25" stroke="#1a2e4a" stroke-width="12"/>
+  <path d="M380 337 L432 389" stroke="#1a2e4a" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- question -->
+  <circle cx="1048" cy="145" r="26" fill="#c9d6e6"/>
+  <circle cx="1048" cy="137" r="9" fill="#fff"/><path d="M1032 160 a16 12 0 0 1 32 0" fill="#fff"/>
+  <rect x="580" y="110" width="440" height="70" rx="22" fill="#fff" stroke="#dde3ea" stroke-width="2"/>
+  <text x="608" y="153" font-size="21" font-weight="600" fill="#1a2e4a">What payment terms did we agree?</text>
+
+  <!-- answer -->
+  <path transform="translate(492 248)" d="M0 -22 C3 -5 5 -3 22 0 C5 3 3 5 0 22 C-3 5 -5 3 -22 0 C-5 -3 -3 -5 0 -22Z" fill="#f2b84b"/>
+  <rect x="530" y="210" width="560" height="140" rx="22" fill="#1a2e4a"/>
+  <text x="560" y="256" font-size="22" font-weight="700" fill="#fff">Net 45 days from invoice date.</text>
+  <rect x="560" y="280" width="320" height="42" rx="21" fill="#e3f3ed"/>
+  <rect x="578" y="290" width="16" height="21" rx="3" fill="none" stroke="#08503f" stroke-width="2.5"/>
+  <text x="604" y="307" font-size="17" font-weight="700" fill="#08503f">Source: contract, p.4, clause 7.2</text>
+
+  <!-- verified -->
+  <rect x="660" y="385" width="330" height="54" rx="27" fill="#fff" stroke="#1d9e75" stroke-width="2"/>
+  <circle cx="692" cy="412" r="16" fill="#1d9e75"/>
+  <path d="M684 412 L690 418 L701 406" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="720" y="419" font-size="19" font-weight="700" fill="#08503f">Checked by the analyst</text>
+</svg>
