@@ -1,172 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light" data-root="../">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Individual &amp; Consolidated Financial Statements | Jamil Ur Rehman</title>
-  <meta name="description" content="A single Power BI solution for individual entity and consolidated group financial statements, with intercompany eliminations and non-controlling interest adjustments.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Individual &amp; Consolidated Financial Statements | Jamil Ur Rehman</title>
+<meta name="description" content="One Power BI model for stand-alone entity statements and the consolidated group, with intercompany eliminations and non-controlling interest.">
+<meta property="og:title" content="Individual &amp; Consolidated Financial Statements | Jamil Ur Rehman">
+<meta property="og:description" content="One Power BI model for stand-alone entity statements and the consolidated group, with intercompany eliminations and non-controlling interest.">
+<meta property="og:image" content="https://jamil-datafinance.github.io/assets/img/consolidation/executive-summary.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23ffffff'%3EJR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=11">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
-<body>
+<body data-project="consolidation">
+<div id="prog"></div>
+<a class="skip" href="#viewer">Skip to the dashboard</a>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="../index.html"><i>JR</i><span>Jamil Ur Rehman</span></a>
+  <nav class="nav" aria-label="Main">
+    <a class="h" href="../index.html#work">Projects</a><a class="h" href="#problem">Problem</a><a class="h" href="#approach">Approach</a><a class="h" href="#decision">Decision</a>
+    <button class="kbtn" type="button" data-cmd aria-label="Search the portfolio (Ctrl+K)">⌕ <span>Search</span> <kbd>Ctrl K</kbd></button>
+    <button id="th" type="button" aria-pressed="false">☀ Light</button>
+    <a class="cv" href="../assets/files/Jamil-Ur-Rehman-CV.pdf?v=4" target="_blank" rel="noopener">CV</a>
+  </nav>
+</div></header>
 
-<header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
-    <nav class="nav">
-      <a href="../index.html#projects">Projects</a>
-      <a href="../index.html#insights">Insights</a>
-      <a href="../index.html#experience">Experience</a>
-      <a href="../index.html#contact">Contact</a>
-      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf?v=3" target="_blank" rel="noopener">Download CV</a>
-    </nav>
+<main class="wrap" id="main">
+<section class="phero">
+  <a class="crumb" href="../index.html#work">← All case studies</a>
+  <span class="eye">Group reporting · IFRS 10 · Power BI</span>
+  <h1>Individual &amp; Consolidated Financial Statements</h1>
+  <p class="q">Can one model give both the entity view and the group view, and prove how one becomes the other?</p>
+  
+  <div class="facts"><div><small>Group</small><b>Parent + 4 subsidiaries</b></div><div><small>Statements</small><b>P&amp;L and balance sheet</b></div><div><small>Covers</small><b>Eliminations, NCI, budget vs actual</b></div><div><small>Built with</small><b>Power BI · DAX · Power Query</b></div></div>
+</section><section class="viewer" id="viewer" data-viewer aria-label="Report pages">
+  <div class="vstage">
+    <figure class="frame"><i></i><img data-zoom src="../assets/img/consolidation/executive-summary.png" alt="Executive summary"></figure>
+    <button type="button" class="vnav prev" aria-label="Previous page">‹</button>
+    <button type="button" class="vnav next" aria-label="Next page">›</button>
   </div>
-</header>
-
-<section class="p-hero">
-  <div class="wrap">
-    <div class="crumb"><a href="../index.html#projects">← All projects</a></div>
-    <div class="eyebrow">Group reporting · Power BI</div>
-    <h1>Individual &amp; Consolidated Financial Statements in Power BI</h1>
-    <p class="lead">Built a single Power BI solution to view individual entity financial statements and consolidated
-      group financial statements in one place, with intercompany eliminations and non-controlling interest adjustments.</p>
-    <div class="glance">
-      <div><small>Group</small><b>Parent + 4 subsidiaries</b></div>
-      <div><small>Statements</small><b>P&amp;L and Balance Sheet</b></div>
-      <div><small>Covers</small><b>Eliminations, NCI, Budget vs Actual</b></div>
-      <div><small>Built with</small><b>Power BI, DAX, Power Query</b></div>
-    </div>
+  <div class="vbar">
+    <div class="vinfo"><span class="vnum">01 / 07</span><h3 class="vtitle">Executive summary</h3><p class="vdesc">Revenue, gross margin, EBITDA and budget achievement for the group, EBITDA margin by entity, the ownership structure, the NCI split and a liquidity check per company.</p></div>
+    <div class="vctl"><button type="button" data-play aria-pressed="false">▶ Play tour</button><button type="button" data-full>⤢ Full size</button></div>
   </div>
-</section>
+  <div class="vprog"><i></i></div>
+  <div class="vhead"><h3>All 7 report pages at a glance</h3><span>Click any card to open it above · ← → keys and swipe work too</span></div>
+  <div class="vthumbs"><button type="button" class="vt" data-src="../assets/img/consolidation/executive-summary.png" data-title="Executive summary" data-desc="Revenue, gross margin, EBITDA and budget achievement for the group, EBITDA margin by entity, the ownership structure, the NCI split and a liquidity check per company." data-alt="Executive summary" data-group=""><img src="../assets/img/consolidation/thumbs/executive-summary.webp" alt="" loading="lazy"><span><b><i>01</i>Executive summary</b><small>Revenue, gross margin, EBITDA and budget achievement for the group, EBITDA margin by entity, the ownership structure, the NCI split and a liquidity check per company.</small></span></button><button type="button" class="vt" data-src="../assets/img/consolidation/entity-pl.png" data-title="P&amp;L: one entity" data-desc="One company&#x27;s own P&amp;L with its intercompany sales and charges still visible, exactly as its auditor would see it." data-alt="P&amp;L: one entity" data-group=""><img src="../assets/img/consolidation/thumbs/entity-pl.webp" alt="" loading="lazy"><span><b><i>02</i>P&L: one entity</b><small>One company's own P&L with its intercompany sales and charges still visible, exactly as its auditor would see it.</small></span></button><button type="button" class="vt" data-src="../assets/img/consolidation/group-pl.png" data-title="P&amp;L: whole group" data-desc="The same page filtered to the group: intercompany activity removed and profit split between the parent&#x27;s shareholders and the 30% minority." data-alt="P&amp;L: whole group" data-group=""><img src="../assets/img/consolidation/thumbs/group-pl.webp" alt="" loading="lazy"><span><b><i>03</i>P&L: whole group</b><small>The same page filtered to the group: intercompany activity removed and profit split between the parent's shareholders and the 30% minority.</small></span></button><button type="button" class="vt" data-src="../assets/img/consolidation/entity-bs.png" data-title="Balance sheet: one entity" data-desc="Intercompany receivables, payables and the investment in subsidiaries at entity level, ready to agree between companies before close." data-alt="Balance sheet: one entity" data-group=""><img src="../assets/img/consolidation/thumbs/entity-bs.webp" alt="" loading="lazy"><span><b><i>04</i>Balance sheet: one entity</b><small>Intercompany receivables, payables and the investment in subsidiaries at entity level, ready to agree between companies before close.</small></span></button><button type="button" class="vt" data-src="../assets/img/consolidation/group-bs.png" data-title="Balance sheet: whole group" data-desc="Intercompany balances and the investment eliminated, with non-controlling interest shown inside equity." data-alt="Balance sheet: whole group" data-group=""><img src="../assets/img/consolidation/thumbs/group-bs.webp" alt="" loading="lazy"><span><b><i>05</i>Balance sheet: whole group</b><small>Intercompany balances and the investment eliminated, with non-controlling interest shown inside equity.</small></span></button><button type="button" class="vt" data-src="../assets/img/consolidation/pl-bridge.png" data-title="P&amp;L consolidation bridge" data-desc="Every entity side by side, then the elimination column, then the group total: each intercompany sale traced to its removal." data-alt="P&amp;L consolidation bridge" data-group=""><img src="../assets/img/consolidation/thumbs/pl-bridge.webp" alt="" loading="lazy"><span><b><i>06</i>P&L consolidation bridge</b><small>Every entity side by side, then the elimination column, then the group total: each intercompany sale traced to its removal.</small></span></button><button type="button" class="vt" data-src="../assets/img/consolidation/bs-bridge.png" data-title="Balance sheet consolidation bridge" data-desc="Entity balances, investment and intercompany eliminations, and the final group position: the audit trail built into the report." data-alt="Balance sheet consolidation bridge" data-group=""><img src="../assets/img/consolidation/thumbs/bs-bridge.webp" alt="" loading="lazy"><span><b><i>07</i>Balance sheet consolidation bridge</b><small>Entity balances, investment and intercompany eliminations, and the final group position: the audit trail built into the report.</small></span></button></div>
+</section><section class="pad" id="problem"><div class="num"><b>01</b><span>The problem</span></div><h2>Two processes, one set of numbers, and nobody can trace between them</h2><p>In most groups each company's results come from its own trial balance, while the consolidation lives in a separate spreadsheet: intercompany eliminations, investment eliminations and minority-interest calculations keyed by hand. That means <b>two processes to maintain</b>, extra reconciliation every month, and group numbers that are <b>hard to trace back</b> to the companies underneath.</p><div class="tscroll"><table class="tbl rv"><thead><tr><th>Entity (fictional Alpha Group)</th><th>Role</th><th>Ownership</th></tr></thead><tbody><tr><td>Alpha Holdings Ltd</td><td>Parent</td><td>—</td></tr><tr><td>Alpha Logistics Ltd</td><td>Subsidiary</td><td>100%</td></tr><tr><td>Alpha Manufacturing Ltd</td><td>Subsidiary</td><td>100%</td></tr><tr><td>Alpha Shared Services Ltd</td><td>Subsidiary</td><td>100%</td></tr><tr><td>Alpha Trading Ltd</td><td>Subsidiary</td><td><span class="bad">70%: 30% non-controlling interest</span></td></tr></tbody></table></div></section><section class="pad" id="approach"><div class="num"><b>02</b><span>My approach</span></div><h2>One model that answers both questions</h2><ol class="steps"><li class="rv"><b>One chart of accounts for every entity</b>All trial balances mapped to a common structure, so entity and group statements come from the same data.</li><li class="rv"><b>Select one entity: stand-alone results</b>Its own P&amp;L and balance sheet, including intercompany sales and balances.</li><li class="rv"><b>Select all: the consolidated group</b>Intercompany activity and the parent's investment are eliminated automatically against subsidiary equity.</li><li class="rv"><b>Calculate NCI inside the model</b>Profit and equity attributable to the 30% minority in Alpha Trading, not in a side spreadsheet.</li><li class="rv"><b>Show every adjustment</b>P&amp;L and balance sheet bridges list each entity, each elimination and the group total, so every number is auditable.</li></ol></section><section class="pad" id="decision"><div class="num"><b>03</b><span>How it helps the decision</span></div><h2>Faster close, cleaner audit, fairer performance reviews</h2><div class="cards2"><div class="dcard pos rv"><small>Month-end</small><h3>Consolidate on refresh, not in a spreadsheet</h3><p>Removes the manual consolidation step and the reconciliation that goes with it.</p><div class=ev><b>Evidence:</b> P&amp;L and balance sheet bridges</div></div><div class="dcard pos rv"><small>Audit</small><h3>Every elimination is visible</h3><p>Auditors can follow each intercompany item from entity books to its removal in the group.</p><div class=ev><b>Evidence:</b> consolidation bridges</div></div><div class="dcard amb rv"><small>Performance</small><h3>Judge each MD on stand-alone results</h3><p>Entity views keep intercompany income visible, so internal charges don't distort who performed.</p><div class=ev><b>Evidence:</b> entity P&amp;L page</div></div><div class="dcard amb rv"><small>Board &amp; dividends</small><h3>Profit attributable to the parent, not the whole group</h3><p>The NCI split shows what actually belongs to the parent's shareholders.</p><div class=ev><b>Evidence:</b> group P&amp;L and executive summary</div></div></div><p class="note">All companies and figures are fictional. For technical readers: <a href="https://github.com/Jamil-DataFinance/Consolidated-financial-statements-Power-BI" target="_blank" rel="noopener">the model write-up is on GitHub</a>.</p></section>
+<nav class="pn" id="pn" style="margin-top:72px" aria-label="More projects"></nav>
+</main>
 
-<section>
-  <div class="wrap two-col">
-    <div>
-      <div class="eyebrow">The problem</div>
-      <h2>Entity reporting and group consolidation usually live apart</h2>
-      <p>In most groups, each company's results come from its own trial balance, while the consolidation
-        is done separately in spreadsheets: intercompany eliminations, investment eliminations and NCI
-        calculations kept by hand.</p>
-      <p>That means two processes to maintain, extra reconciliation work, and consolidated numbers that are
-        hard to trace back to the companies underneath.</p>
-    </div>
-    <div>
-      <div class="eyebrow">What I built</div>
-      <h2>A single model that answers both questions</h2>
-      <ul class="ticks">
-        <li><b>Select one entity</b> to see its standalone results, including its intercompany sales and balances.</li>
-        <li><b>Select "All"</b> to see the consolidated group: intercompany activity is removed automatically.</li>
-        <li>The parent's <b>investment in subsidiaries</b> is eliminated against the subsidiaries' equity.</li>
-        <li><b>Non-controlling interest</b> is calculated for the 70%-owned subsidiary, not kept in a side spreadsheet.</li>
-        <li><b>Consolidation bridges</b> show every adjustment, so the group numbers can be audited.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <div class="eyebrow">Group structure</div>
-    <h2>The (fictional) Alpha Group</h2>
-    <table class="simple">
-      <thead><tr><th>Entity</th><th>Role</th><th>Ownership</th></tr></thead>
-      <tbody>
-        <tr><td>Alpha Holdings Ltd</td><td>Parent</td><td>—</td></tr>
-        <tr><td>Alpha Logistics Ltd</td><td>Subsidiary</td><td>100%</td></tr>
-        <tr><td>Alpha Manufacturing Ltd</td><td>Subsidiary</td><td>100%</td></tr>
-        <tr><td>Alpha Shared Services Ltd</td><td>Subsidiary</td><td>100%</td></tr>
-        <tr><td>Alpha Trading Ltd</td><td>Subsidiary</td><td>70%, so 30% is non-controlling interest</td></tr>
-      </tbody>
-    </table>
-    <div class="flow">
-      <span>Trial balances</span><i>→</i><span>Common chart of accounts</span><i>→</i><span>Entity statements</span><i>→</i><span>Eliminations &amp; NCI</span><i>→</i><span>Consolidated statements</span>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="eyebrow">The report</div>
-    <h2>What it looks like</h2>
-    <p class="hint">Click any image to view it full size.</p>
-
-    <div class="shots">
-      <div class="shot">
-        <h3>Executive summary</h3>
-        <figcaption>Revenue, gross margin, EBITDA and budget achievement at a glance, with EBITDA margin by entity,
-          the ownership structure, the NCI split and a liquidity check for each company.</figcaption>
-        <figure><img src="../assets/img/consolidation/executive-summary.png" alt="Group performance overview dashboard"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>Profit &amp; Loss: one entity vs the whole group</h3>
-        <figcaption>The same page, filtered two ways. On the left, one company's own P&amp;L with its intercompany
-          activity visible. On the right, the consolidated group P&amp;L with intercompany activity removed and
-          profit split between the parent's shareholders and NCI.</figcaption>
-        <div class="pair">
-          <figure><small>Single entity</small><img src="../assets/img/consolidation/entity-pl.png" alt="Individual entity P&L"></figure>
-          <figure><small>Consolidated group</small><img src="../assets/img/consolidation/group-pl.png" alt="Consolidated group P&L"></figure>
-        </div>
-      </div>
-
-      <div class="shot">
-        <h3>Balance Sheet: one entity vs the whole group</h3>
-        <figcaption>At entity level you can see intercompany receivables, payables and the investment in subsidiaries.
-          At group level these are eliminated, and NCI appears within equity.</figcaption>
-        <div class="pair">
-          <figure><small>Single entity</small><img src="../assets/img/consolidation/entity-bs.png" alt="Individual entity balance sheet"></figure>
-          <figure><small>Consolidated group</small><img src="../assets/img/consolidation/group-bs.png" alt="Consolidated group balance sheet"></figure>
-        </div>
-      </div>
-
-      <div class="shot">
-        <h3>P&amp;L consolidation bridge</h3>
-        <figcaption>Every entity side by side, then an elimination column, then the consolidated total. You can
-          trace exactly how each intercompany sale and service charge is removed and how much profit goes to NCI.</figcaption>
-        <figure><img src="../assets/img/consolidation/pl-bridge.png" alt="P&L consolidation bridge"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>Balance Sheet consolidation bridge</h3>
-        <figcaption>The same approach for the balance sheet: entity balances, the investment and intercompany
-          eliminations, and the final group position.</figcaption>
-        <figure><img src="../assets/img/consolidation/bs-bridge.png" alt="Balance sheet consolidation bridge"></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <div class="eyebrow">Why it matters</div>
-    <h2>What this shows</h2>
-    <ul class="ticks">
-      <li>Practical knowledge of IFRS 10 consolidation: control, eliminations, and NCI.</li>
-      <li>Reporting design that removes manual spreadsheet steps from the month-end consolidation.</li>
-      <li>Transparency: consolidated figures always reconcile back to each entity's books.</li>
-      <li>A structure that scales: new entities can be added without rebuilding the report.</li>
-    </ul>
-    <div class="callout"><p>All companies and figures are fictional, created for this portfolio. No confidential company data is used.</p></div>
-    <p style="margin-top:24px" class="hint">For technical readers: <a href="https://github.com/Jamil-DataFinance/Consolidated-financial-statements-Power-BI" target="_blank" rel="noopener">the full model write-up is on GitHub</a>.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap next">
-    <a href="../index.html#projects"><small>← Back</small><b>All projects</b></a>
-    <a href="fpa-dashboard.html" style="text-align:right"><small>Next project →</small><b>FP&amp;A &amp; Financial Performance Dashboard</b></a>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
-    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
-  </div>
-</footer>
-
-<script src="../assets/js/site.js?v=3"></script>
+<footer><div class="wrap"><span>© <span id="year">2026</span> Jamil Ur Rehman · FP&amp;A · Power BI · Python · AI</span><span><a href="mailto:jamil.akhunzada@gmail.com">jamil.akhunzada@gmail.com</a></span></div></footer>
+<script src="../assets/js/site.js?v=6"></script>
 </body>
 </html>

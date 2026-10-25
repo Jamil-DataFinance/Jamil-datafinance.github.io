@@ -1,136 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light" data-root="../">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HR Analytics Dashboard | Jamil Ur Rehman</title>
-  <meta name="description" content="A 4-page Power BI HR dashboard: headcount, demographics, employee performance tracking and attrition by role, age group and year.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Workforce &amp; Attrition Analytics | Jamil Ur Rehman</title>
+<meta name="description" content="Headcount, demographics, performance reviews and attrition for a 1,470-person workforce, built as input for headcount and payroll planning.">
+<meta property="og:title" content="Workforce &amp; Attrition Analytics | Jamil Ur Rehman">
+<meta property="og:description" content="Headcount, demographics, performance reviews and attrition for a 1,470-person workforce, built as input for headcount and payroll planning.">
+<meta property="og:image" content="https://jamil-datafinance.github.io/assets/img/hr-analytics/overview.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23ffffff'%3EJR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=11">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
-<body>
+<body data-project="hr-analytics">
+<div id="prog"></div>
+<a class="skip" href="#viewer">Skip to the dashboard</a>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="../index.html"><i>JR</i><span>Jamil Ur Rehman</span></a>
+  <nav class="nav" aria-label="Main">
+    <a class="h" href="../index.html#work">Projects</a><a class="h" href="#problem">Problem</a><a class="h" href="#approach">Approach</a><a class="h" href="#decision">Decision</a>
+    <button class="kbtn" type="button" data-cmd aria-label="Search the portfolio (Ctrl+K)">⌕ <span>Search</span> <kbd>Ctrl K</kbd></button>
+    <button id="th" type="button" aria-pressed="false">☀ Light</button>
+    <a class="cv" href="../assets/files/Jamil-Ur-Rehman-CV.pdf?v=4" target="_blank" rel="noopener">CV</a>
+  </nav>
+</div></header>
 
-<header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
-    <nav class="nav">
-      <a href="../index.html#projects">Projects</a>
-      <a href="../index.html#insights">Insights</a>
-      <a href="../index.html#experience">Experience</a>
-      <a href="../index.html#contact">Contact</a>
-      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf?v=3" target="_blank" rel="noopener">Download CV</a>
-    </nav>
+<main class="wrap" id="main">
+<section class="phero">
+  <a class="crumb" href="../index.html#work">← All case studies</a>
+  <span class="eye">People cost · Power BI</span>
+  <h1>Workforce &amp; Attrition Analytics</h1>
+  <p class="q">Payroll is the largest cost line. Where is turnover concentrated, and what should the headcount budget assume?</p>
+  
+  <div class="facts"><div><small>Workforce</small><b>1,470 employees, 2012–2022</b></div><div><small>Pages</small><b>4 report pages</b></div><div><small>Covers</small><b>Headcount, demographics, reviews, attrition</b></div><div><small>Built with</small><b>Power BI · DAX · Power Query</b></div></div>
+</section><section class="viewer" id="viewer" data-viewer aria-label="Report pages">
+  <div class="vstage">
+    <figure class="frame"><i></i><img data-zoom src="../assets/img/hr-analytics/overview.png" alt="Overview"></figure>
+    <button type="button" class="vnav prev" aria-label="Previous page">‹</button>
+    <button type="button" class="vnav next" aria-label="Next page">›</button>
   </div>
-</header>
-
-<section class="p-hero">
-  <div class="wrap">
-    <div class="crumb"><a href="../index.html#projects">← All projects</a></div>
-    <div class="eyebrow">People analytics · Power BI</div>
-    <h1>HR Analytics Dashboard</h1>
-    <p class="lead">A four-page Power BI report on a 1,470-person workforce: who works where, how the
-      workforce is made up, how each employee's reviews have moved over time, and where staff turnover is highest.</p>
-    <div class="glance">
-      <div><small>Workforce</small><b>1,470 employees, 2012–2022</b></div>
-      <div><small>Pages</small><b>4 report pages</b></div>
-      <div><small>Covers</small><b>Headcount, demographics, reviews, attrition</b></div>
-      <div><small>Built with</small><b>Power BI, DAX, Power Query</b></div>
-    </div>
+  <div class="vbar">
+    <div class="vinfo"><span class="vnum">01 / 04</span><h3 class="vtitle">Overview</h3><p class="vdesc">Total, active and inactive employees with a 16.1% overall attrition rate, hiring by year split by who stayed, and headcount by department and role.</p></div>
+    <div class="vctl"><button type="button" data-play aria-pressed="false">▶ Play tour</button><button type="button" data-full>⤢ Full size</button></div>
   </div>
-</section>
+  <div class="vprog"><i></i></div>
+  <div class="vhead"><h3>All 4 report pages at a glance</h3><span>Click any card to open it above · ← → keys and swipe work too</span></div>
+  <div class="vthumbs"><button type="button" class="vt" data-src="../assets/img/hr-analytics/overview.png" data-title="Overview" data-desc="Total, active and inactive employees with a 16.1% overall attrition rate, hiring by year split by who stayed, and headcount by department and role." data-alt="Overview" data-group=""><img src="../assets/img/hr-analytics/thumbs/overview.webp" alt="" loading="lazy"><span><b><i>01</i>Overview</b><small>Total, active and inactive employees with a 16.1% overall attrition rate, hiring by year split by who stayed, and headcount by department and role.</small></span></button><button type="button" class="vt" data-src="../assets/img/hr-analytics/demographics.png" data-title="Demographics" data-desc="Age profile (mostly in their twenties), gender mix by age band, marital status, and headcount with average salary by ethnicity." data-alt="Demographics" data-group=""><img src="../assets/img/hr-analytics/thumbs/demographics.webp" alt="" loading="lazy"><span><b><i>02</i>Demographics</b><small>Age profile (mostly in their twenties), gender mix by age band, marital status, and headcount with average salary by ethnicity.</small></span></button><button type="button" class="vt" data-src="../assets/img/hr-analytics/tracker.png" data-title="Performance tracker" data-desc="Pick an employee to see department, salary and start date, with satisfaction, work-life balance and ratings across review years." data-alt="Performance tracker" data-group=""><img src="../assets/img/hr-analytics/thumbs/tracker.webp" alt="" loading="lazy"><span><b><i>03</i>Performance tracker</b><small>Pick an employee to see department, salary and start date, with satisfaction, work-life balance and ratings across review years.</small></span></button><button type="button" class="vt" data-src="../assets/img/hr-analytics/attrition.png" data-title="Attrition" data-desc="Turnover by year (peaking at 22% in 2020), job role, age band, overtime and gender. Sales representatives and recruiters leave most." data-alt="Attrition" data-group=""><img src="../assets/img/hr-analytics/thumbs/attrition.webp" alt="" loading="lazy"><span><b><i>04</i>Attrition</b><small>Turnover by year (peaking at 22% in 2020), job role, age band, overtime and gender. Sales representatives and recruiters leave most.</small></span></button></div>
+</section><section class="pad" id="problem"><div class="num"><b>01</b><span>The problem</span></div><h2>Staff costs need people data behind them</h2><p>Payroll is usually the largest cost line, but what drives it, <b>headcount by department and who is leaving and why</b>, sits in HR spreadsheets finance rarely sees. Without it, headcount budgets and hiring plans are built on last year's numbers rather than on what is happening in the workforce.</p></section><section class="pad" id="approach"><div class="num"><b>02</b><span>My approach</span></div><h2>From HR records to planning inputs</h2><ol class="steps"><li class="rv"><b>Clean the data</b>Removed duplicates and filled gaps in Power Query.</li><li class="rv"><b>Make turnover comparable</b>Age bands and an attrition rate, so groups of different sizes can be compared fairly.</li><li class="rv"><b>Four views for four questions</b>Headcount overview, demographics, an individual review tracker, and attrition by year, role, age, overtime and gender.</li></ol></section><section class="pad" id="decision"><div class="num"><b>03</b><span>How it helps the decision</span></div><h2>Better headcount and payroll budgets</h2><div class="cards2"><div class="dcard amb rv"><small>Budget</small><h3>Budget for one leaver in six</h3><p>16.1% attrition is a recurring cost (recruitment, onboarding, lost output) that belongs in the plan.</p><div class=ev><b>Evidence:</b> Overview page</div></div><div class="dcard neg rv"><small>Retention</small><h3>Target retention spend at sales reps and recruiters</h3><p>These roles leave most often, so that is where retention money works hardest.</p><div class=ev><b>Evidence:</b> Attrition page</div></div><div class="dcard amb rv"><small>Workforce planning</small><h3>Plan for a young workforce</h3><p>Most staff are in their twenties, where turnover is highest and salaries progress fastest.</p><div class=ev><b>Evidence:</b> Demographics page</div></div><div class="dcard pos rv"><small>Pay decisions</small><h3>Link pay to review history</h3><p>Managers can see an employee's ratings over five years before a salary decision.</p><div class=ev><b>Evidence:</b> Performance tracker</div></div></div><p class="note">The company and employees are fictional. For technical readers: <a href="https://github.com/Jamil-DataFinance/HR-Analytics" target="_blank" rel="noopener">the Power BI file is on GitHub</a>.</p></section>
+<nav class="pn" id="pn" style="margin-top:72px" aria-label="More projects"></nav>
+</main>
 
-<section>
-  <div class="wrap two-col">
-    <div>
-      <div class="eyebrow">The problem</div>
-      <h2>Staff costs need people data behind them</h2>
-      <p>Payroll is usually the largest cost line, but the information that drives it (headcount by
-        department, who is leaving, and why) tends to sit in HR spreadsheets that finance never sees.</p>
-      <p>Without it, headcount budgets and hiring plans are built on last year's numbers rather than on
-        what is actually happening in the workforce.</p>
-    </div>
-    <div>
-      <div class="eyebrow">What I built</div>
-      <ul class="ticks">
-        <li><b>Cleaned the employee data</b> in Power Query: removed duplicates and filled gaps.</li>
-        <li>Added <b>age bands</b> and an <b>attrition rate</b> so turnover can be compared fairly across groups.</li>
-        <li>A <b>headcount overview</b> by department and role, with hiring and leavers by year.</li>
-        <li>An <b>employee tracker</b> that shows one person's review scores over five years.</li>
-        <li>An <b>attrition page</b> showing turnover by year, job role, age band and gender.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <div class="eyebrow">The report</div>
-    <h2>What it looks like</h2>
-    <p class="hint">Click any image to view it full size.</p>
-
-    <div class="shots">
-      <div class="shot">
-        <h3>1. Overview</h3>
-        <figcaption>Total, active and inactive employees with an overall attrition rate of 16.1%. Hiring by year
-          split between staff who stayed and those who left, active headcount by department, and the five
-          largest job roles.</figcaption>
-        <figure><img src="../assets/img/hr-analytics/overview.png" alt="HR overview dashboard"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>2. Employee demographics</h3>
-        <figcaption>The age profile of the workforce (most staff are in their twenties), the gender mix within
-          each age band, marital status, and headcount alongside average salary by ethnicity.</figcaption>
-        <figure><img src="../assets/img/hr-analytics/demographics.png" alt="Employee demographics dashboard"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>3. Employee performance tracker</h3>
-        <figcaption>Pick any employee to see their department, salary, start date and latest review date, with
-          job satisfaction, work-life balance, self rating and manager rating plotted across each review year.</figcaption>
-        <figure><img src="../assets/img/hr-analytics/tracker.png" alt="Employee performance tracker"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>4. Attrition</h3>
-        <figcaption>Turnover by year (peaking at 22% in 2020), by job role (sales representatives and recruiters
-          leave most often), by age band (highest in the twenties, lowest over fifty), by overtime and by gender.</figcaption>
-        <figure><img src="../assets/img/hr-analytics/attrition.png" alt="Attrition dashboard"></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="eyebrow">Why it matters</div>
-    <h2>What this shows</h2>
-    <ul class="ticks">
-      <li>Turning raw HR records into figures finance can use for headcount and payroll planning.</li>
-      <li>Spotting where turnover is concentrated, so hiring and retention spend can be targeted.</li>
-      <li>Designing interactive reports that let managers filter by department, role, age and gender.</li>
-    </ul>
-    <div class="callout"><p>The company and employees are fictional, created for practice. No real employee data is used.</p></div>
-    <p style="margin-top:18px" class="hint">For technical readers: the Power BI file is on <a href="https://github.com/Jamil-DataFinance/HR-Analytics" target="_blank" rel="noopener">GitHub</a>.</p>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap next">
-    <a href="five-year-model.html"><small>← Previous project</small><b>Integrated 5-Year Financial Modelling &amp; Valuation</b></a>
-    <a href="../index.html#projects" style="text-align:right"><small>Back to →</small><b>All projects</b></a>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
-    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
-  </div>
-</footer>
-
-<script src="../assets/js/site.js?v=3"></script>
+<footer><div class="wrap"><span>© <span id="year">2026</span> Jamil Ur Rehman · FP&amp;A · Power BI · Python · AI</span><span><a href="mailto:jamil.akhunzada@gmail.com">jamil.akhunzada@gmail.com</a></span></div></footer>
+<script src="../assets/js/site.js?v=6"></script>
 </body>
 </html>

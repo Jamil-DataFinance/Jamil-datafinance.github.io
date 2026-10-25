@@ -1,140 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light" data-root="../">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Integrated 5-Year Financial Modelling &amp; Valuation | Jamil Ur Rehman</title>
-  <meta name="description" content="An integrated Excel three-statement model projecting five years of P&L, balance sheet and cash flow, with a dashboard and supporting schedules.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Integrated 5-Year Financial Model &amp; Valuation | Jamil Ur Rehman</title>
+<meta name="description" content="A linked three-statement Excel model with supporting schedules, scenarios, sensitivity tables and DCF valuation, summarised on one executive page.">
+<meta property="og:title" content="Integrated 5-Year Financial Model &amp; Valuation | Jamil Ur Rehman">
+<meta property="og:description" content="A linked three-statement Excel model with supporting schedules, scenarios, sensitivity tables and DCF valuation, summarised on one executive page.">
+<meta property="og:image" content="https://jamil-datafinance.github.io/assets/img/five-year-model/dashboard.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23ffffff'%3EJR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=11">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
-<body>
+<body data-project="five-year-model">
+<div id="prog"></div>
+<a class="skip" href="#viewer">Skip to the dashboard</a>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="../index.html"><i>JR</i><span>Jamil Ur Rehman</span></a>
+  <nav class="nav" aria-label="Main">
+    <a class="h" href="../index.html#work">Projects</a><a class="h" href="#problem">Problem</a><a class="h" href="#approach">Approach</a><a class="h" href="#decision">Decision</a>
+    <button class="kbtn" type="button" data-cmd aria-label="Search the portfolio (Ctrl+K)">⌕ <span>Search</span> <kbd>Ctrl K</kbd></button>
+    <button id="th" type="button" aria-pressed="false">☀ Light</button>
+    <a class="cv" href="../assets/files/Jamil-Ur-Rehman-CV.pdf?v=4" target="_blank" rel="noopener">CV</a>
+  </nav>
+</div></header>
 
-<header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
-    <nav class="nav">
-      <a href="../index.html#projects">Projects</a>
-      <a href="../index.html#insights">Insights</a>
-      <a href="../index.html#experience">Experience</a>
-      <a href="../index.html#contact">Contact</a>
-      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf?v=3" target="_blank" rel="noopener">Download CV</a>
-    </nav>
+<main class="wrap" id="main">
+<section class="phero">
+  <a class="crumb" href="../index.html#work">← All case studies</a>
+  <span class="eye">Financial modelling · Excel · DCF</span>
+  <h1>Integrated 5-Year Financial Model &amp; Valuation</h1>
+  <p class="q">How fast can the business grow, what will it earn, and will it generate enough cash to fund itself and repay its debt?</p>
+  
+  <div class="facts"><div><small>Horizon</small><b>2021–23 actuals, 2024–28 forecast</b></div><div><small>Statements</small><b>P&amp;L, balance sheet, cash flow</b></div><div><small>Schedules</small><b>Depreciation, debt, working capital</b></div><div><small>Built with</small><b>Microsoft Excel</b></div></div><div class="dl"><a class="btn g" href="../assets/files/Five-Year-Financial-Model.xlsx" download>Download the Excel model</a><a class="btn" href="../assets/files/Five-Year-Financial-Model.pdf" target="_blank" rel="noopener">View as PDF</a></div>
+</section><section class="viewer" id="viewer" data-viewer aria-label="Model sheets">
+  <div class="vstage">
+    <figure class="frame"><i></i><img data-zoom src="../assets/img/five-year-model/dashboard.png" alt="Executive dashboard"></figure>
+    <button type="button" class="vnav prev" aria-label="Previous page">‹</button>
+    <button type="button" class="vnav next" aria-label="Next page">›</button>
   </div>
-</header>
-
-<section class="p-hero">
-  <div class="wrap">
-    <div class="crumb"><a href="../index.html#projects">← All projects</a></div>
-    <div class="eyebrow">Financial modelling · Excel</div>
-    <h1>Integrated 5-Year Financial Modelling &amp; Valuation</h1>
-    <p class="lead">An integrated five-year financial model in Excel linking the income statement, balance sheet and
-      cash flow statement, with scenario analysis, sensitivity tables and supporting DCF valuation schedules to assess
-      business performance and enterprise value under different assumptions.</p>
-    <div class="glance">
-      <div><small>Horizon</small><b>2021–23 actuals, 2024–28 forecast</b></div>
-      <div><small>Statements</small><b>P&amp;L, Balance Sheet, Cash Flow</b></div>
-      <div><small>Supporting</small><b>Depreciation, debt, working capital</b></div>
-      <div><small>Built with</small><b>Microsoft Excel</b></div>
-    </div>
-    <div class="btn-row" style="margin-top:28px">
-      <a class="btn" href="../assets/files/Five-Year-Financial-Model.xlsx" download>Download the Excel model</a>
-      <a class="btn ghost" href="../assets/files/Five-Year-Financial-Model.pdf" target="_blank" rel="noopener">View as PDF</a>
-    </div>
+  <div class="vbar">
+    <div class="vinfo"><span class="vnum">01 / 04</span><h3 class="vtitle">Executive dashboard</h3><p class="vdesc">A profit waterfall from revenue to net income, revenue and profit moving from actuals into forecast, cash flows against the cash balance, and EBITDA margin over time.</p></div>
+    <div class="vctl"><button type="button" data-play aria-pressed="false">▶ Play tour</button><button type="button" data-full>⤢ Full size</button></div>
   </div>
-</section>
+  <div class="vprog"><i></i></div>
+  <div class="vhead"><h3>All 4 model sheets at a glance</h3><span>Click any card to open it above · ← → keys and swipe work too</span></div>
+  <div class="vthumbs"><button type="button" class="vt" data-src="../assets/img/five-year-model/dashboard.png" data-title="Executive dashboard" data-desc="A profit waterfall from revenue to net income, revenue and profit moving from actuals into forecast, cash flows against the cash balance, and EBITDA margin over time." data-alt="Executive dashboard" data-group=""><img src="../assets/img/five-year-model/thumbs/dashboard.webp" alt="" loading="lazy"><span><b><i>01</i>Executive dashboard</b><small>A profit waterfall from revenue to net income, revenue and profit moving from actuals into forecast, cash flows against the cash balance, and EBITDA margin over time.</small></span></button><button type="button" class="vt" data-src="../assets/img/five-year-model/income-statement.png" data-title="Income statement" data-desc="2021A–2023A actuals and 2024F–2028F forecast from revenue to net income, including current and deferred tax." data-alt="Income statement" data-group=""><img src="../assets/img/five-year-model/thumbs/income-statement.webp" alt="" loading="lazy"><span><b><i>02</i>Income statement</b><small>2021A–2023A actuals and 2024F–2028F forecast from revenue to net income, including current and deferred tax.</small></span></button><button type="button" class="vt" data-src="../assets/img/five-year-model/balance-sheet.png" data-title="Balance sheet" data-desc="Projected assets, liabilities and equity, linked to the income statement and schedules, so it balances every year without a plug." data-alt="Balance sheet" data-group=""><img src="../assets/img/five-year-model/thumbs/balance-sheet.webp" alt="" loading="lazy"><span><b><i>03</i>Balance sheet</b><small>Projected assets, liabilities and equity, linked to the income statement and schedules, so it balances every year without a plug.</small></span></button><button type="button" class="vt" data-src="../assets/img/five-year-model/cash-flow.png" data-title="Cash flow statement" data-desc="Operating cash, investment and financing setting the closing cash balance each year: does the plan fund itself?" data-alt="Cash flow statement" data-group=""><img src="../assets/img/five-year-model/thumbs/cash-flow.webp" alt="" loading="lazy"><span><b><i>04</i>Cash flow statement</b><small>Operating cash, investment and financing setting the closing cash balance each year: does the plan fund itself?</small></span></button></div>
+</section><section class="pad" id="problem"><div class="num"><b>01</b><span>The problem</span></div><h2>A plan that looks good in profit can still run out of cash</h2><p>Boards and lenders ask the same questions: how fast can the business grow, what will it earn, and <b>will it generate enough cash to fund itself and repay its debt?</b> A forecast built statement by statement can't answer that, because growth, working capital, capex and funding all move together.</p></section><section class="pad" id="approach"><div class="num"><b>02</b><span>My approach</span></div><h2>Assumptions in, three linked statements out</h2><ol class="steps"><li class="rv"><b>Actuals set the baseline</b>Three historical years anchor every forecast assumption.</li><li class="rv"><b>Fully linked statements</b>Profit flows to retained earnings and the cash flow drives closing cash, so the balance sheet balances by construction.</li><li class="rv"><b>Supporting schedules</b>Depreciation, debt and working capital drive the forecast instead of hard-coded numbers.</li><li class="rv"><b>Inputs kept separate</b>Assumptions such as growth and inflation sit apart from calculations, so scenarios and sensitivities run in seconds.</li><li class="rv"><b>One page for the board</b>An executive dashboard summarises five years of forecast and the valuation.</li></ol></section><section class="pad" id="decision"><div class="num"><b>03</b><span>How it helps the decision</span></div><h2>Funding, growth and value on one page</h2><div class="cards2"><div class="dcard pos rv"><small>Funding</small><h3>Can the plan fund itself?</h3><p>Closing cash each year shows whether growth needs new debt or equity.</p><div class=ev><b>Evidence:</b> cash flow sheet</div></div><div class="dcard amb rv"><small>Growth</small><h3>What growth rate is affordable?</h3><p>Change one assumption and see profit, working capital and cash respond together.</p><div class=ev><b>Evidence:</b> income statement and balance sheet</div></div><div class="dcard pos rv"><small>Valuation</small><h3>What is the business worth?</h3><p>DCF schedules turn the forecast into enterprise value under different scenarios.</p><div class=ev><b>Evidence:</b> dashboard and valuation schedules</div></div><div class="dcard pos rv"><small>Transparency</small><h3>Every number can be audited</h3><p>Download the model and follow each formula from assumption to output.</p><div class=ev><b>Evidence:</b> the Excel file</div></div></div><p class="note">"Placeholder Innovations" is a fictional company.</p><div class="dl"><a class="btn g" href="../assets/files/Five-Year-Financial-Model.xlsx" download>Download the Excel model</a><a class="btn" href="../assets/files/Five-Year-Financial-Model.pdf" target="_blank" rel="noopener">View as PDF</a></div></section>
+<nav class="pn" id="pn" style="margin-top:72px" aria-label="More projects"></nav>
+</main>
 
-<section>
-  <div class="wrap two-col">
-    <div>
-      <div class="eyebrow">The purpose</div>
-      <h2>A planning tool for management and investors</h2>
-      <p>A five-year projection answers the questions boards and lenders ask: how fast can the business grow,
-        what will it earn, and will it generate enough cash to fund itself and repay its debt?</p>
-    </div>
-    <div>
-      <div class="eyebrow">How it's built</div>
-      <ul class="ticks">
-        <li><b>Historical actuals</b> set the baseline for every forecast assumption.</li>
-        <li>The <b>three statements are fully linked</b>: profit flows into retained earnings, and cash flow drives the closing cash balance.</li>
-        <li><b>Supporting schedules</b> for depreciation, debt and working capital drive the forecast.</li>
-        <li>Inputs and assumptions such as <b>inflation</b> are separated from calculations, so scenarios are easy to run.</li>
-        <li>A <b>one-page dashboard</b> summarises the results for an executive reader.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <div class="eyebrow">The model</div>
-    <h2>What it looks like</h2>
-    <p class="hint">Click any image to view it full size.</p>
-
-    <div class="shots">
-      <div class="shot">
-        <h3>Executive dashboard</h3>
-        <figcaption>A profit waterfall from revenue to net income, revenue and net income from actuals into forecast,
-          operating, investing and financing cash flows against the cash balance, and EBITDA margin over time.</figcaption>
-        <figure><img src="../assets/img/five-year-model/dashboard.png" alt="Financial model dashboard" style="max-width:760px"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>Income statement</h3>
-        <figcaption>Three years of actuals (2021A–2023A) followed by five forecast years (2024F–2028F), from revenue
-          down to net income, including current and deferred tax.</figcaption>
-        <figure><img src="../assets/img/five-year-model/income-statement.png" alt="Projected income statement" style="max-width:760px"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>Balance sheet</h3>
-        <figcaption>Projected assets, liabilities and equity, linked to the income statement and supporting schedules.</figcaption>
-        <figure><img src="../assets/img/five-year-model/balance-sheet.png" alt="Projected balance sheet" style="max-width:760px"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>Cash flow statement</h3>
-        <figcaption>Cash generated from operations, investment in assets and financing activity, which together set
-          the closing cash balance each year.</figcaption>
-        <figure><img src="../assets/img/five-year-model/cash-flow.png" alt="Projected cash flow statement" style="max-width:760px"></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="eyebrow">Why it matters</div>
-    <h2>What this shows</h2>
-    <ul class="ticks">
-      <li>Building an integrated three-statement model to FMVA standards.</li>
-      <li>Forecasting from historical performance using clear, adjustable assumptions.</li>
-      <li>Presenting a complex model in a way a board or investor can read in one page.</li>
-    </ul>
-    <div class="callout"><p>"Placeholder Innovations" is a fictional company. Download the model to explore the formulas and assumptions yourself.</p></div>
-    <div class="btn-row" style="margin-top:24px">
-      <a class="btn" href="../assets/files/Five-Year-Financial-Model.xlsx" download>Download the Excel model</a>
-      <a class="btn ghost" href="../assets/files/Five-Year-Financial-Model.pdf" target="_blank" rel="noopener">View as PDF</a>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap next">
-    <a href="financial-reporting.html"><small>← Previous project</small><b>Financial Reporting in Power BI</b></a>
-    <a href="hr-analytics.html" style="text-align:right"><small>Next project →</small><b>HR Analytics Dashboard</b></a>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
-    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
-  </div>
-</footer>
-
-<script src="../assets/js/site.js?v=3"></script>
+<footer><div class="wrap"><span>© <span id="year">2026</span> Jamil Ur Rehman · FP&amp;A · Power BI · Python · AI</span><span><a href="mailto:jamil.akhunzada@gmail.com">jamil.akhunzada@gmail.com</a></span></div></footer>
+<script src="../assets/js/site.js?v=6"></script>
 </body>
 </html>

@@ -1,156 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light" data-root="../">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FP&amp;A &amp; Financial Performance Dashboard | Jamil Ur Rehman</title>
-  <meta name="description" content="A 6-page Power BI FP&A pack: budget vs actual, sales, customers, profitability, receivables aging and a what-if EBITDA model.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FP&amp;A &amp; Financial Performance Dashboard | Jamil Ur Rehman</title>
+<meta name="description" content="A six-page monthly performance pack from revenue to EBITDA, with budget vs actual, profitability, receivables ageing and a what-if model.">
+<meta property="og:title" content="FP&amp;A &amp; Financial Performance Dashboard | Jamil Ur Rehman">
+<meta property="og:description" content="A six-page monthly performance pack from revenue to EBITDA, with budget vs actual, profitability, receivables ageing and a what-if model.">
+<meta property="og:image" content="https://jamil-datafinance.github.io/assets/img/fpa-dashboard/summary.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23ffffff'%3EJR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=11">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
-<body>
+<body data-project="fpa-dashboard">
+<div id="prog"></div>
+<a class="skip" href="#viewer">Skip to the dashboard</a>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="../index.html"><i>JR</i><span>Jamil Ur Rehman</span></a>
+  <nav class="nav" aria-label="Main">
+    <a class="h" href="../index.html#work">Projects</a><a class="h" href="#problem">Problem</a><a class="h" href="#approach">Approach</a><a class="h" href="#decision">Decision</a>
+    <button class="kbtn" type="button" data-cmd aria-label="Search the portfolio (Ctrl+K)">⌕ <span>Search</span> <kbd>Ctrl K</kbd></button>
+    <button id="th" type="button" aria-pressed="false">☀ Light</button>
+    <a class="cv" href="../assets/files/Jamil-Ur-Rehman-CV.pdf?v=4" target="_blank" rel="noopener">CV</a>
+  </nav>
+</div></header>
 
-<header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="../index.html">Jamil Ur Rehman<span>.</span></a>
-    <nav class="nav">
-      <a href="../index.html#projects">Projects</a>
-      <a href="../index.html#insights">Insights</a>
-      <a href="../index.html#experience">Experience</a>
-      <a href="../index.html#contact">Contact</a>
-      <a class="btn small" href="../assets/files/Jamil-Ur-Rehman-CV.pdf?v=3" target="_blank" rel="noopener">Download CV</a>
-    </nav>
+<main class="wrap" id="main">
+<section class="phero">
+  <a class="crumb" href="../index.html#work">← All case studies</a>
+  <span class="eye">FP&amp;A · Budget vs actual · Power BI</span>
+  <h1>FP&amp;A &amp; Financial Performance Dashboard</h1>
+  <p class="q">Are we on budget, which products and channels actually make money, who is slow to pay, and what if growth slows?</p>
+  
+  <div class="facts"><div><small>Business</small><b>E-commerce company, FY2025</b></div><div><small>Pages</small><b>6 report pages</b></div><div><small>Covers</small><b>Budget vs actual, margins, AR, scenarios</b></div><div><small>Built with</small><b>Power BI · DAX (40+ measures)</b></div></div>
+</section><section class="viewer" id="viewer" data-viewer aria-label="Report pages">
+  <div class="vstage">
+    <figure class="frame"><i></i><img data-zoom src="../assets/img/fpa-dashboard/summary.png" alt="Model summary"></figure>
+    <button type="button" class="vnav prev" aria-label="Previous page">‹</button>
+    <button type="button" class="vnav next" aria-label="Next page">›</button>
   </div>
-</header>
-
-<section class="p-hero">
-  <div class="wrap">
-    <div class="crumb"><a href="../index.html#projects">← All projects</a></div>
-    <div class="eyebrow">FP&amp;A · Power BI</div>
-    <h1>FP&amp;A &amp; Financial Performance Dashboard</h1>
-    <p class="lead">A complete monthly performance pack for a fictional e-commerce business, from revenue to EBITDA.
-      It ends with a what-if model where management can change assumptions and see the EBITDA impact instantly.</p>
-    <div class="glance">
-      <div><small>Business</small><b>E-commerce company, FY2025</b></div>
-      <div><small>Pages</small><b>6 report pages</b></div>
-      <div><small>Covers</small><b>Budget vs Actual, margins, AR aging, scenarios</b></div>
-      <div><small>Built with</small><b>Power BI, DAX (40+ measures)</b></div>
-    </div>
+  <div class="vbar">
+    <div class="vinfo"><span class="vnum">01 / 06</span><h3 class="vtitle">Model summary</h3><p class="vdesc">Net revenue 54.05m at 99.7% of budget, gross profit 16.72m (30.9%), EBITDA 5.56m, and a bridge showing how 61.61m of gross revenue becomes 5.56m of EBITDA after discounts, refunds, COGS and overheads.</p></div>
+    <div class="vctl"><button type="button" data-play aria-pressed="false">▶ Play tour</button><button type="button" data-full>⤢ Full size</button></div>
   </div>
-</section>
+  <div class="vprog"><i></i></div>
+  <div class="vhead"><h3>All 6 report pages at a glance</h3><span>Click any card to open it above · ← → keys and swipe work too</span></div>
+  <div class="vthumbs"><button type="button" class="vt" data-src="../assets/img/fpa-dashboard/summary.png" data-title="Model summary" data-desc="Net revenue 54.05m at 99.7% of budget, gross profit 16.72m (30.9%), EBITDA 5.56m, and a bridge showing how 61.61m of gross revenue becomes 5.56m of EBITDA after discounts, refunds, COGS and overheads." data-alt="Model summary" data-group=""><img src="../assets/img/fpa-dashboard/thumbs/summary.webp" alt="" loading="lazy"><span><b><i>01</i>Model summary</b><small>Net revenue 54.05m at 99.7% of budget, gross profit 16.72m (30.9%), EBITDA 5.56m, and a bridge showing how 61.61m of gross revenue becomes 5.56m of EBITDA after discounts, refunds, COGS and overheads.</small></span></button><button type="button" class="vt" data-src="../assets/img/fpa-dashboard/sales.png" data-title="Sales analysis" data-desc="Monthly revenue with the budget shortfall stacked in red, category performance against budget, and revenue by channel. Electronics brings 50% of revenue; Grocery misses budget by 2.6m." data-alt="Sales analysis" data-group=""><img src="../assets/img/fpa-dashboard/thumbs/sales.webp" alt="" loading="lazy"><span><b><i>02</i>Sales analysis</b><small>Monthly revenue with the budget shortfall stacked in red, category performance against budget, and revenue by channel. Electronics brings 50% of revenue; Grocery misses budget by 2.6m.</small></span></button><button type="button" class="vt" data-src="../assets/img/fpa-dashboard/customers.png" data-title="Customer intelligence" data-desc="New vs returning customers each month, revenue by customer type (35m retention vs 19m new), and discounts and refunds per customer." data-alt="Customer intelligence" data-group=""><img src="../assets/img/fpa-dashboard/thumbs/customers.webp" alt="" loading="lazy"><span><b><i>03</i>Customer intelligence</b><small>New vs returning customers each month, revenue by customer type (35m retention vs 19m new), and discounts and refunds per customer.</small></span></button><button type="button" class="vt" data-src="../assets/img/fpa-dashboard/profitability.png" data-title="Profitability analysis" data-desc="A product P&amp;L from gross revenue to EBITDA. The best-sellers earn about 25% gross margin; smaller home products earn about 34%." data-alt="Profitability analysis" data-group=""><img src="../assets/img/fpa-dashboard/thumbs/profitability.webp" alt="" loading="lazy"><span><b><i>04</i>Profitability analysis</b><small>A product P&L from gross revenue to EBITDA. The best-sellers earn about 25% gross margin; smaller home products earn about 34%.</small></span></button><button type="button" class="vt" data-src="../assets/img/fpa-dashboard/aging.png" data-title="Customer ageing" data-desc="Receivables by customer in 0–30 to 91–365 day buckets with a risk score. North America holds 2.3m; 2.6m sits in the high-risk band." data-alt="Customer ageing" data-group=""><img src="../assets/img/fpa-dashboard/thumbs/aging.webp" alt="" loading="lazy"><span><b><i>05</i>Customer ageing</b><small>Receivables by customer in 0–30 to 91–365 day buckets with a risk score. North America holds 2.3m; 2.6m sits in the high-risk band.</small></span></button><button type="button" class="vt" data-src="../assets/img/fpa-dashboard/scenario.png" data-title="What-if model" data-desc="Sliders for growth, discounts, COGS, refunds, marketing, overheads and shipping. The projected P&amp;L and EBITDA bridge recalculate instantly against FY25 actuals." data-alt="What-if model" data-group=""><img src="../assets/img/fpa-dashboard/thumbs/scenario.webp" alt="" loading="lazy"><span><b><i>06</i>What-if model</b><small>Sliders for growth, discounts, COGS, refunds, marketing, overheads and shipping. The projected P&L and EBITDA bridge recalculate instantly against FY25 actuals.</small></span></button></div>
+</section><section class="pad" id="problem"><div class="num"><b>01</b><span>The problem</span></div><h2>Management needs answers, not more sales charts</h2><p>A finance director wants to know four things every month: <b>are we on budget, which products and channels make money after all costs, which customers are slow to pay, and what happens to EBITDA if growth slows or costs rise?</b> The answers usually sit in separate spreadsheets owned by different people, so the monthly review spends its time reconciling instead of deciding.</p></section><section class="pad" id="approach"><div class="num"><b>02</b><span>My approach</span></div><h2>Six pages, each built around one decision</h2><ol class="steps"><li class="rv"><b>Measures before visuals</b>Actual, budget and prior year with variances in value and %, written and tested in DAX first so every page agrees.</li><li class="rv"><b>Bridges, not just totals</b>A Revenue-to-EBITDA bridge shows exactly where gross revenue goes: discounts, refunds, cost of sales, marketing, overheads and shipping.</li><li class="rv"><b>Profit by product, not just revenue</b>A full product P&amp;L, because the biggest sellers are not always the most profitable.</li><li class="rv"><b>Working capital in the same pack</b>An ageing page laid out the way a credit-control meeting runs: who owes what, how late, how risky.</li><li class="rv"><b>Scenarios inside the report</b>Sliders recalculate the P&amp;L live, so leadership can test an assumption in the meeting.</li></ol></section><section class="pad" id="decision"><div class="num"><b>03</b><span>How it helps the decision</span></div><h2>From "what happened" to "what we do next"</h2><div class="cards2"><div class="dcard neg rv"><small>Budget</small><h3>Fix the categories that missed, not the whole business</h3><p>Grocery is 2.6m and Beauty 0.9m below budget while Electronics is far ahead. Targeted action instead of a blanket push.</p><div class=ev><b>Evidence:</b> Sales analysis page</div></div><div class="dcard amb rv"><small>Margin</small><h3>Watch the mix</h3><p>Electronics is half of revenue but earns the lowest gross margin (25%). Growth there grows revenue faster than profit.</p><div class=ev><b>Evidence:</b> Sales and Profitability pages</div></div><div class="dcard neg rv"><small>Cash</small><h3>Chase the high-risk receivables first</h3><p>2.6m sits in the high-risk band, led by MegaMart Holdings and GlobMart Inc (over 50% risk scores).</p><div class=ev><b>Evidence:</b> Customer ageing page</div></div><div class="dcard pos rv"><small>Planning</small><h3>Test assumptions before committing</h3><p>Leadership can see what +25% growth and tighter cost control do to EBITDA in the meeting, instead of waiting a week for a reforecast.</p><div class=ev><b>Evidence:</b> What-if page</div></div></div><p class="note">The company, customers and figures are fictional. For technical readers: <a href="https://github.com/Jamil-DataFinance/6Slides-FP-A-Model" target="_blank" rel="noopener">model details are on GitHub</a>.</p></section>
+<nav class="pn" id="pn" style="margin-top:72px" aria-label="More projects"></nav>
+</main>
 
-<section>
-  <div class="wrap two-col">
-    <div>
-      <div class="eyebrow">The problem</div>
-      <h2>Management needs more than sales charts</h2>
-      <p>A finance director wants to know: are we on budget, which products and channels actually make money,
-        which customers are slow to pay, and what happens to EBITDA if growth slows or costs rise?</p>
-      <p>Those answers usually sit in separate spreadsheets. This pack brings them together, with each page
-        built around a specific management decision.</p>
-    </div>
-    <div>
-      <div class="eyebrow">What's inside</div>
-      <table class="simple">
-        <thead><tr><th>Page</th><th>Answers</th></tr></thead>
-        <tbody>
-          <tr><td>Model Summary</td><td>Are we on budget? How does revenue turn into EBITDA?</td></tr>
-          <tr><td>Sales Analysis</td><td>Which categories and channels hit or missed budget?</td></tr>
-          <tr><td>Customer Intelligence</td><td>New vs returning customers, discounts and refunds by customer</td></tr>
-          <tr><td>Profitability</td><td>Which products earn the most after all costs?</td></tr>
-          <tr><td>Customer Aging</td><td>Who owes us money, and how overdue is it?</td></tr>
-          <tr><td>What-if Analysis</td><td>What happens to EBITDA if assumptions change?</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <div class="eyebrow">The report</div>
-    <h2>What it looks like</h2>
-    <p class="hint">Click any image to view it full size.</p>
-
-    <div class="shots">
-      <div class="shot">
-        <h3>1. FP&amp;A model summary</h3>
-        <figcaption>Headline KPIs against last year and budget, monthly revenue vs budget vs prior year, and a
-          Revenue-to-EBITDA bridge showing how discounts, refunds, cost of sales and overheads reduce
-          gross revenue down to EBITDA.</figcaption>
-        <figure><img src="../assets/img/fpa-dashboard/summary.png" alt="FP&A model summary dashboard"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>2. Sales analysis</h3>
-        <figcaption>Monthly revenue with the shortfall against budget highlighted in red, a category table with
-          budget variance and gross profit %, the best and weakest categories, and revenue by sales channel.</figcaption>
-        <figure><img src="../assets/img/fpa-dashboard/sales.png" alt="Sales analysis dashboard"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>3. Customer intelligence</h3>
-        <figcaption>How many customers are new vs returning each month, how much revenue each group brings in,
-          and the discounts and refunds given to each customer.</figcaption>
-        <figure><img src="../assets/img/fpa-dashboard/customers.png" alt="Customer intelligence dashboard"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>4. Profitability analysis</h3>
-        <figcaption>A full product P&amp;L from gross revenue through discounts, refunds, cost of sales, marketing,
-          overheads and shipping, showing which products actually drive EBITDA.</figcaption>
-        <figure><img src="../assets/img/fpa-dashboard/profitability.png" alt="Profitability analysis dashboard"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>5. Customer aging report</h3>
-        <figcaption>Receivables split into 0–30, 31–60, 61–90 and 91–365 day buckets for each customer, with a
-          colour-coded risk level and totals by region and risk category, ready for the credit control meeting.</figcaption>
-        <figure><img src="../assets/img/fpa-dashboard/aging.png" alt="Customer aging report"></figure>
-      </div>
-
-      <div class="shot">
-        <h3>6. Scenario / what-if model</h3>
-        <figcaption>Sliders for revenue growth, discounts, cost of sales, refunds, marketing, overheads and shipping.
-          Move a slider and the projected P&amp;L, the comparison against actuals and the EBITDA bridge all
-          recalculate immediately.</figcaption>
-        <figure><img src="../assets/img/fpa-dashboard/scenario.png" alt="Scenario and what-if analysis"></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="eyebrow">Why it matters</div>
-    <h2>What this shows</h2>
-    <ul class="ticks">
-      <li>The full FP&amp;A cycle in one place: planning, reporting, variance analysis and forward-looking scenarios.</li>
-      <li>Scenario modelling built into the report itself, so leadership can test assumptions without a separate spreadsheet.</li>
-      <li>Working capital awareness: the aging page follows how credit control teams actually work.</li>
-      <li>Reports designed around the questions a CFO asks, not just charts of the data.</li>
-    </ul>
-    <div class="callout"><p>The company, customers, products and figures are fictional, created for this portfolio.</p></div>
-    <p style="margin-top:24px" class="hint">For technical readers: <a href="https://github.com/Jamil-DataFinance/6Slides-FP-A-Model" target="_blank" rel="noopener">model details are on GitHub</a>.</p>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap next">
-    <a href="consolidation.html"><small>← Previous project</small><b>Individual &amp; Consolidated Financial Statements in Power BI</b></a>
-    <a href="financial-reporting.html" style="text-align:right"><small>Next project →</small><b>Financial Reporting in Power BI</b></a>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <span>© <span id="year">2026</span> Jamil Ur Rehman</span>
-    <span><a href="mailto:jamil.akhunzada@gmail.com" style="color:inherit">jamil.akhunzada@gmail.com</a></span>
-  </div>
-</footer>
-
-<script src="../assets/js/site.js?v=3"></script>
+<footer><div class="wrap"><span>© <span id="year">2026</span> Jamil Ur Rehman · FP&amp;A · Power BI · Python · AI</span><span><a href="mailto:jamil.akhunzada@gmail.com">jamil.akhunzada@gmail.com</a></span></div></footer>
+<script src="../assets/js/site.js?v=6"></script>
 </body>
 </html>
